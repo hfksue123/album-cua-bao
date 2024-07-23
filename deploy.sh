@@ -14,13 +14,13 @@ cd dist
 
 git init
 git add -A
-git branch -M master main
 git commit -m 'deploy'
+git checkout -B main
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:hfksue/album.git main:gh-pages
+git push -f git@github.com:bao3004/my-vue.git main:gh-pages
 
 cd -
