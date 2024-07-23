@@ -3,9 +3,7 @@ const webpack = require("webpack");
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/my-vue/'
-    : '/',
+  publicPath: '/',
   configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({
