@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import DownButton1 from "./DownButton/DownButton1.vue";
+import DownButton1 from "../DownButton/DownButton1.vue";
 export default {
   name: "MainContent",
   components: {
@@ -86,7 +86,8 @@ h1 {
 .concept-one {
   display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
-  background: url("../assets/img/header/IMG_1961.png") no-repeat center center;
+  background: url("../../assets/img/header/IMG_1961.png") no-repeat center
+    center;
   background-size: cover;
 }
 .concept-one h1 {

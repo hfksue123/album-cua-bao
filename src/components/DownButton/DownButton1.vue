@@ -1,5 +1,5 @@
 <template>
-  <section id="section03" class="demo">
+  <section id="scrolldown1" class="demo">
     <a href="#" class="scroll-link"><span></span>Scroll</a>
   </section>
 </template>
@@ -23,10 +23,10 @@
   opacity: 0.5;
 }
 
-#section03 .scroll-link {
+#scrolldown1 .scroll-link {
   padding-top: 60px;
 }
-#section03 .scroll-link span {
+#scrolldown1 .scroll-link span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -37,7 +37,7 @@
   border-radius: 100%;
   box-sizing: border-box;
 }
-#section03 .scroll-link span::after {
+#scrolldown1 .scroll-link span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,7 +51,7 @@
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-#section03 .scroll-link span::before {
+#scrolldown1 .scroll-link span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,16 +102,17 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-  #section03 .scroll-link {
+  #scrolldown1 .scroll-link {
     left: 45%;
   }
 }
 @media (max-width: 576px) {
-  #section03 .scroll-link {
+  #scrolldown1 .scroll-link {
     left: 42%;
   }
 }
 </style>
+
 <script>
 export default {
   mounted() {

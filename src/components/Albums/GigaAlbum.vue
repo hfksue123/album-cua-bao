@@ -244,8 +244,6 @@
     </div>
   </div>
 
-  <ScrollUpComp />
-
   <FooterComp />
 </template>
 
@@ -254,16 +252,14 @@ import "jquery"; // Import jQuery
 import "lightbox2/dist/css/lightbox.min.css";
 import lightbox from "lightbox2";
 
-import HeaderComp from "../HeaderComp.vue";
+import HeaderComp from "../Headers/Header1Comp.vue";
 import FooterComp from "../FooterComp.vue";
-import ScrollUpComp from "../ScrollUpComp.vue";
 
 export default {
   name: "GalleryComponent",
   components: {
     HeaderComp,
     FooterComp,
-    ScrollUpComp,
   },
   mounted() {
     if (lightbox) {

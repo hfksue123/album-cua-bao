@@ -1,12 +1,13 @@
 import { createMemoryHistory, createRouter } from "vue-router";
 
-import HeaderComp from "../components/HeaderComp.vue";
+import HeaderComp from "../components/Headers/Header1Comp.vue";
 import AboutComp from "../components/AboutComp.vue";
 import AlbumComp from "../components/AlbumComp.vue";
 import FooterComp from "../components/FooterComp.vue";
 // import ErrorComp from "../components/ErrorComp.vue";
 import ProfileComp from "../components/ProfileComp.vue";
 import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
+import Header2Comp from "@/components/Headers/Header2Comp.vue";
 
 const routes = [
   { path: "/", component: AlbumComp },
@@ -14,6 +15,7 @@ const routes = [
   { path: "/footer", component: FooterComp },
   { path: "/profile", component: ProfileComp },
   { path: "/header1", component: HeaderComp },
+  { path: "/header2", component: Header2Comp },
   { path: "/giga", component: GigaAlbum },
   { path: "/:pathMatch(.*)*", component: AboutComp },
 ];

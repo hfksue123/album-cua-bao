@@ -1,20 +1,27 @@
 <template>
-  <loader-comp v-if="loading" />
-  <div v-else>
-    <nav-bar></nav-bar>
-    <router-view></router-view>
+  <div>
+    <loader-comp v-if="loading" />
+    <div v-else>
+      <nav-bar />
+      <keep-alive>
+        <router-view />
+      </keep-alive>
+      <scroll-up-comp />
+    </div>
   </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import LoaderComp from "./components/LoaderComp.vue";
+import ScrollUpComp from "./components/ScrollUpComp.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
     LoaderComp,
+    ScrollUpComp,
   },
   data() {
     return {
@@ -24,7 +31,7 @@ export default {
   created() {
     setTimeout(() => {
       this.loading = false;
-    }, 5000);
+    }, 2000);
   },
 };
 </script>
@@ -47,7 +54,7 @@ html {
   --main-color: #00ffee;
 }
 html::-webkit-scrollbar {
-  width: 6px !important;
+  width: 5px !important;
 }
 
 html::-webkit-scrollbar-track {
@@ -59,7 +66,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 5px;
-  border: 2px solid var(--bg-color);
+  border: 0.5px solid var(--bg-color);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 </style>

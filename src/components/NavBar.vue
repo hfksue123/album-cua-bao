@@ -5,7 +5,7 @@
       <nav class="navbar" :class="{ shrink: isShrunk }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
-        <router-link to="/profile" @click="closeDropdown">Info</router-link>
+        <router-link to="/header2" @click="closeDropdown">Info</router-link>
       </nav>
       <div class="toggle-btn" @click="toggleDropdown">
         <font-awesome-icon :icon="['fas', 'bars']" />
