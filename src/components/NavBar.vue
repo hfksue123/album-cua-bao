@@ -1,18 +1,16 @@
 <template>
   <div class="wrapper">
-    <div class="top-section">
-      <div class="logo">HFKSUE123</div>
-      <nav class="navbar">
+    <div class="top-section" :class="{ shrink: isShrunk }">
+      <div class="logo" :class="{ shrink: isShrunk }">HFKSUE123</div>
+      <nav class="navbar" :class="{ shrink: isShrunk }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/profile" @click="closeDropdown">Info</router-link>
       </nav>
-
       <div class="toggle-btn" @click="toggleDropdown">
         <font-awesome-icon :icon="['fas', 'bars']" />
       </div>
-
-      <div class="dropdown" :class="{ open: isDropdownOpen }">
+      <div class="dropdown" :class="{ open: isDropdownOpen, shrink: isShrunk }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/profile" @click="closeDropdown">Info</router-link>
@@ -26,6 +24,7 @@ export default {
   data() {
     return {
       isDropdownOpen: false,
+      isShrunk: false,
     };
   },
   methods: {
@@ -35,14 +34,20 @@ export default {
     closeDropdown() {
       this.isDropdownOpen = false;
     },
+    handleScroll() {
+      this.isShrunk = window.scrollY > 50;
+    },
   },
-  // Close dropdown if clicked outside
   mounted() {
     document.addEventListener("click", (event) => {
       if (!this.$el.contains(event.target) && this.isDropdownOpen) {
         this.closeDropdown();
       }
     });
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>

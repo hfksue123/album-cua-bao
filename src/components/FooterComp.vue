@@ -181,4 +181,23 @@ a {
   margin-top: 20px;
   font-size: 14px;
 }
+
+@media (max-width: 400px) {
+  #footer {
+    padding: 10px 0;
+  }
+  #content {
+    margin: 10px;
+    line-height: 1.1;
+  }
+  #line {
+    margin: 10px auto;
+  }
+  #social-icon {
+    margin: 10px 0;
+  }
+  #copyright {
+    margin-top: 10px;
+  }
+}
 </style>

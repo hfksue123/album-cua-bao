@@ -394,6 +394,7 @@ export default {
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
+    padding: 0 15px;
   }
 
   .grid-item:nth-child(2) {
