@@ -374,7 +374,6 @@ a {
     height: 251px;
     transform: translate(15%, -35%);
     background-position: 80% 50%;
-    transition: all 0.5s ease-in-out;
   }
   .item .name {
     font-size: 45px;
