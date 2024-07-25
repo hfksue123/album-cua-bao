@@ -3,9 +3,11 @@
     <loader-comp v-if="loading" />
     <div v-else>
       <nav-bar />
-      <keep-alive>
-        <router-view />
-      </keep-alive>
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </router-view>
       <scroll-up-comp />
     </div>
   </div>

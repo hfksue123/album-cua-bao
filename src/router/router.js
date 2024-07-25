@@ -8,6 +8,7 @@ import FooterComp from "../components/FooterComp.vue";
 import ProfileComp from "../components/ProfileComp.vue";
 import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
 import Header2Comp from "@/components/Headers/Header2Comp.vue";
+import AlbumTest from "@/components/AlbumTest.vue";
 
 const routes = [
   { path: "/", component: AlbumComp },
@@ -17,6 +18,7 @@ const routes = [
   { path: "/header1", component: HeaderComp },
   { path: "/header2", component: Header2Comp },
   { path: "/giga", component: GigaAlbum },
+  { path: "/albumtest", component: AlbumTest },
   { path: "/:pathMatch(.*)*", component: AboutComp },
 ];
 

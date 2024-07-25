@@ -1,12 +1,12 @@
 <template id="web">
   <HeaderComp />
 
-  <div class="container">
+  <div class="container" ref="container">
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1928.png')"
-        data-lightbox="gallery"
-        data-title="Title1"
+        data-fancybox="gallery"
+        data-caption="Title1"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1928.png')"
@@ -17,8 +17,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1929.png')"
-        data-lightbox="gallery"
-        data-title="Title2"
+        data-fancybox="gallery"
+        data-caption="Title2"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1929.png')"
@@ -29,8 +29,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1930.png')"
-        data-lightbox="gallery"
-        data-title="Title3"
+        data-fancybox="gallery"
+        data-caption="Title3"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1930.png')"
@@ -41,8 +41,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1931.png')"
-        data-lightbox="gallery"
-        data-title="Title4"
+        data-fancybox="gallery"
+        data-caption="Title4"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1931.png')"
@@ -53,8 +53,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1932.png')"
-        data-lightbox="gallery"
-        data-title="Title5"
+        data-fancybox="gallery"
+        data-caption="Title5"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1932.png')"
@@ -65,8 +65,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1933.png')"
-        data-lightbox="gallery"
-        data-title="Title6"
+        data-fancybox="gallery"
+        data-caption="Title6"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1933.png')"
@@ -77,8 +77,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1938.png')"
-        data-lightbox="gallery"
-        data-title="Title7"
+        data-fancybox="gallery"
+        data-caption="Title7"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1938.png')"
@@ -89,8 +89,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1939.png')"
-        data-lightbox="gallery"
-        data-title="Title8"
+        data-fancybox="gallery"
+        data-caption="Title8"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1939.png')"
@@ -101,8 +101,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1940.png')"
-        data-lightbox="gallery"
-        data-title="By accident"
+        data-fancybox="gallery"
+        data-caption="By accident"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1940.png')"
@@ -113,8 +113,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1942.png')"
-        data-lightbox="gallery"
-        data-title="Title10"
+        data-fancybox="gallery"
+        data-caption="Title10"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1942.png')"
@@ -125,8 +125,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1943.png')"
-        data-lightbox="gallery"
-        data-title="Title11"
+        data-fancybox="gallery"
+        data-caption="Title11"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1943.png')"
@@ -137,8 +137,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1945.png')"
-        data-lightbox="gallery"
-        data-title="Title12"
+        data-fancybox="gallery"
+        data-caption="Title12"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1945.png')"
@@ -149,8 +149,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1946.png')"
-        data-lightbox="gallery"
-        data-title="Title13"
+        data-fancybox="gallery"
+        data-caption="Title13"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1946.png')"
@@ -161,8 +161,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1950.png')"
-        data-lightbox="gallery"
-        data-title="Title14"
+        data-fancybox="gallery"
+        data-caption="Title14"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1950.png')"
@@ -173,8 +173,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1951.png')"
-        data-lightbox="gallery"
-        data-title="Title15"
+        data-fancybox="gallery"
+        data-caption="Title15"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1951.png')"
@@ -185,8 +185,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1952.png')"
-        data-lightbox="gallery"
-        data-title="Title16"
+        data-fancybox="gallery"
+        data-caption="Title16"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1952.png')"
@@ -197,8 +197,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1953.png')"
-        data-lightbox="gallery"
-        data-title="Title17"
+        data-fancybox="gallery"
+        data-caption="Title17"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1953.png')"
@@ -209,8 +209,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1954.png')"
-        data-lightbox="gallery"
-        data-title="Title18"
+        data-fancybox="gallery"
+        data-caption="Title18"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1954.png')"
@@ -221,8 +221,8 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1959.png')"
-        data-lightbox="gallery"
-        data-title="Title19"
+        data-fancybox="gallery"
+        data-caption="Title19"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1959.png')"
@@ -233,8 +233,7 @@
     <div class="grid-item">
       <a
         :href="require('../../assets/img/albumImage/giga/IMG_1961.png')"
-        data-lightbox="gallery"
-        data-title="Title20"
+        data-fancybox="gallery"
       >
         <img
           :src="require('../../assets/img/albumImage/giga/IMG_1961.png')"
@@ -248,9 +247,8 @@
 </template>
 
 <script>
-import "jquery"; // Import jQuery
-import "lightbox2/dist/css/lightbox.min.css";
-import lightbox from "lightbox2";
+import { Fancybox } from "@fancyapps/ui";
+import "../../css/fancybox.css";
 
 import HeaderComp from "../Headers/Header1Comp.vue";
 import FooterComp from "../FooterComp.vue";
@@ -262,17 +260,33 @@ export default {
     FooterComp,
   },
   mounted() {
-    if (lightbox) {
-      lightbox.option({
-        resizeDuration: 100,
-        wrapAround: true,
-        alwaysShowNavOnTouchDevices: true,
-        fadeDuration: 200,
-        positionFromTop: 30,
-        disableScrolling: true,
-        fitImagesInViewport: true,
-      });
-    }
+    Fancybox.bind(this.$refs.container, "[data-fancybox]", {
+      Carousel: {
+        infinite: true,
+      },
+      Thumbs: {
+        type: "classic",
+        transition: "slide",
+      },
+      Toolbar: {
+        display: {
+          left: ["infobar"],
+          right: [
+            "slideshow",
+            "thumbs",
+            "zoomIn",
+            "zoomOut",
+            "fullscreen",
+            "close",
+          ],
+        },
+      },
+      wheel: "zoom",
+      defaultType: "ajax",
+    });
+  },
+  unmounted() {
+    Fancybox.destroy();
   },
 };
 </script>
@@ -330,7 +344,7 @@ export default {
 }
 
 .grid-item:hover img {
-  transform: translateX(0.5px);
+  transform: translateX(0.1px);
 }
 
 .grid-item:nth-child(2) {
@@ -386,7 +400,7 @@ export default {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;

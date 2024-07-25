@@ -32,11 +32,9 @@
   padding: 5px;
   transition: font-size 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
-
-.dropdown.shrink {
-  top: 50px;
-  margin-right: 100px;
-  transition: top 0.3s ease-in-out;
+.toggle-btn.shrink .fa-bars {
+  transform: translateX(35px);
+  transition: font-size 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* General styles */
@@ -48,7 +46,6 @@ a {
   position: fixed;
   width: 100%;
   max-width: 100%;
-  margin: auto;
   height: 80px;
   display: flex;
   top: 0px;

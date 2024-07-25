@@ -14,22 +14,9 @@ library.add(fas, far, fab);
 
 // Import jQuery and Lightbox
 import "jquery";
-import "lightbox2/dist/css/lightbox.min.css";
-import lightbox from "lightbox2";
 import "./registerServiceWorker";
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.use(router);
 app.mount("#app");
-
-// Configure Lightbox options
-lightbox.option({
-  resizeDuration: 100,
-  wrapAround: true,
-  alwaysShowNavOnTouchDevices: true,
-  fadeDuration: 200,
-  positionFromTop: 50,
-  disableScrolling: true,
-  fitImagesInViewport: true,
-});
