@@ -266,7 +266,7 @@ html::-webkit-scrollbar {
   width: 0.3rem;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   .home-img .main_img {
     width: 44vh;
     height: 44vh;

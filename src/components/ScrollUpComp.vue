@@ -78,4 +78,12 @@ export default {
 .scroll-to-top:hover .icon {
   transform: rotate(360deg);
 }
+@media (max-width: 500px) {
+  .icon {
+    font-size: 15px;
+  }
+  .scroll-to-top {
+    padding: 14px;
+  }
+}
 </style>

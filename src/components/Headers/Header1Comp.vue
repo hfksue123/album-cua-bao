@@ -73,7 +73,7 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.7), transparent);
+  background: radial-gradient(circle, rgba(170, 170, 170, 0.2), transparent);
   opacity: 0;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -86,8 +86,9 @@ h1 {
 .concept-one {
   display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
-  background: url("https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1961_yy4ezr.png")
-    no-repeat center center;
+  background-image: url("https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto,e_sharpen/v1722012142/IMG_1961_yy4ezr.png");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 .concept-one h1 {
