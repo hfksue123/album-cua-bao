@@ -7,6 +7,7 @@ import FooterComp from "../components/FooterComp.vue";
 // import ErrorComp from "../components/ErrorComp.vue";
 import ProfileComp from "../components/ProfileComp.vue";
 import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
+import ModalInactive from "@/components/ModalInactive.vue";
 import Header2Comp from "@/components/Headers/Header2Comp.vue";
 import AlbumTest from "@/components/AlbumTest.vue";
 
@@ -19,6 +20,7 @@ const routes = [
   { path: "/header2", component: Header2Comp },
   { path: "/giga", component: GigaAlbum },
   { path: "/albumtest", component: AlbumTest },
+  { path: "/modal", component: ModalInactive },
   { path: "/:pathMatch(.*)*", component: AboutComp },
 ];
 

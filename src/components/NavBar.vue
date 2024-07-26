@@ -5,7 +5,7 @@
       <nav class="navbar" :class="{ shrink: isShrunk }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
-        <router-link to="/albumtest" @click="closeDropdown">Info</router-link>
+        <router-link to="/modal" @click="closeDropdown">Info</router-link>
       </nav>
       <div
         class="toggle-btn"
@@ -20,7 +20,7 @@
       <div class="dropdown" :class="{ open: isDropdownOpen }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
-        <router-link to="/albumtest" @click="closeDropdown">Info</router-link>
+        <router-link to="/modal" @click="closeDropdown">Info</router-link>
       </div>
     </div>
   </div>

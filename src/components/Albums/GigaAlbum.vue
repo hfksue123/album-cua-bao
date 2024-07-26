@@ -31,8 +31,8 @@ export default {
     return {
       images: [
         {
-          src: require("../../assets/img/albumImage/giga/IMG_1928.png"),
-          href: require("../../assets/img/albumImage/giga/IMG_1928.png"),
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,h_300,c_fill,q_50/v1722012141/IMG_1928_w1gciv.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012141/IMG_1928_w1gciv.png",
           caption: "Title1",
         },
         {
@@ -193,15 +193,13 @@ export default {
 /* lazy-load */
 .lazy-load {
   filter: blur(10px);
-  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-  opacity: 0;
-  transform: scale(1.1);
+  transition: filter 0.3s, opacity 0.3s;
+  opacity: 0.5;
 }
 
 .lazy-load[src] {
   filter: blur(0);
   opacity: 1;
-  transform: scale(1);
 }
 
 .container {

@@ -86,8 +86,8 @@ h1 {
 .concept-one {
   display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
-  background: url("../../assets/img/header/IMG_1961.png") no-repeat center
-    center;
+  background: url("https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1961_yy4ezr.png")
+    no-repeat center center;
   background-size: cover;
 }
 .concept-one h1 {
