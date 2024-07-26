@@ -1,248 +1,16 @@
 <template id="web">
   <HeaderComp />
-
   <div class="container" ref="container">
-    <div class="grid-item">
+    <div class="grid-item" v-for="(image, index) in images" :key="index">
       <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1928.png')"
+        :href="image.href"
         data-fancybox="gallery"
-        data-caption="Title1"
+        :data-caption="image.caption"
       >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1928.png')"
-          alt="Title1"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1929.png')"
-        data-fancybox="gallery"
-        data-caption="Title2"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1929.png')"
-          alt="Title2"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1930.png')"
-        data-fancybox="gallery"
-        data-caption="Title3"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1930.png')"
-          alt="Title3"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1931.png')"
-        data-fancybox="gallery"
-        data-caption="Title4"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1931.png')"
-          alt="Title4"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1932.png')"
-        data-fancybox="gallery"
-        data-caption="Title5"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1932.png')"
-          alt="Title5"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1933.png')"
-        data-fancybox="gallery"
-        data-caption="Title6"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1933.png')"
-          alt="Title6"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1938.png')"
-        data-fancybox="gallery"
-        data-caption="Title7"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1938.png')"
-          alt="Title7"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1939.png')"
-        data-fancybox="gallery"
-        data-caption="Title8"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1939.png')"
-          alt="Title8"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1940.png')"
-        data-fancybox="gallery"
-        data-caption="By accident"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1940.png')"
-          alt="Title9"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1942.png')"
-        data-fancybox="gallery"
-        data-caption="Title10"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1942.png')"
-          alt="Title10"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1943.png')"
-        data-fancybox="gallery"
-        data-caption="Title11"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1943.png')"
-          alt="Title11"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1945.png')"
-        data-fancybox="gallery"
-        data-caption="Title12"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1945.png')"
-          alt="Title12"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1946.png')"
-        data-fancybox="gallery"
-        data-caption="Title13"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1946.png')"
-          alt="Title13"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1950.png')"
-        data-fancybox="gallery"
-        data-caption="Title14"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1950.png')"
-          alt="Title14"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1951.png')"
-        data-fancybox="gallery"
-        data-caption="Title15"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1951.png')"
-          alt="Title15"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1952.png')"
-        data-fancybox="gallery"
-        data-caption="Title16"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1952.png')"
-          alt="Title16"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1953.png')"
-        data-fancybox="gallery"
-        data-caption="Title17"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1953.png')"
-          alt="Title17"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1954.png')"
-        data-fancybox="gallery"
-        data-caption="Title18"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1954.png')"
-          alt="Title18"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1959.png')"
-        data-fancybox="gallery"
-        data-caption="Title19"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1959.png')"
-          alt="Title19"
-        />
-      </a>
-    </div>
-    <div class="grid-item">
-      <a
-        :href="require('../../assets/img/albumImage/giga/IMG_1961.png')"
-        data-fancybox="gallery"
-      >
-        <img
-          :src="require('../../assets/img/albumImage/giga/IMG_1961.png')"
-          alt="Title20"
-        />
+        <img :data-src="image.src" :alt="image.caption" class="lazy-load" />
       </a>
     </div>
   </div>
-
   <FooterComp />
 </template>
 
@@ -258,6 +26,112 @@ export default {
   components: {
     HeaderComp,
     FooterComp,
+  },
+  data() {
+    return {
+      images: [
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1928.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1928.png"),
+          caption: "Title1",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1929.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1929.png"),
+          caption: "Title2",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1930.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1930.png"),
+          caption: "Title3",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1931.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1931.png"),
+          caption: "Title4",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1932.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1932.png"),
+          caption: "Title5",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1933.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1933.png"),
+          caption: "Title6",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1938.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1938.png"),
+          caption: "Title7",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1939.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1939.png"),
+          caption: "Title8",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1940.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1940.png"),
+          caption: "By accident",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1942.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1942.png"),
+          caption: "Title10",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1943.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1943.png"),
+          caption: "Title11",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1945.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1945.png"),
+          caption: "Title12",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1946.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1946.png"),
+          caption: "Title13",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1950.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1950.png"),
+          caption: "Title14",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1951.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1951.png"),
+          caption: "Title15",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1952.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1952.png"),
+          caption: "Title16",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1953.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1953.png"),
+          caption: "Title17",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1954.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1954.png"),
+          caption: "Title18",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1959.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1959.png"),
+          caption: "Title19",
+        },
+        {
+          src: require("../../assets/img/albumImage/giga/IMG_1961.png"),
+          href: require("../../assets/img/albumImage/giga/IMG_1961.png"),
+          caption: "Title20",
+        },
+      ],
+    };
   },
   mounted() {
     Fancybox.bind(this.$refs.container, "[data-fancybox]", {
@@ -284,6 +158,23 @@ export default {
       wheel: "zoom",
       defaultType: "ajax",
     });
+
+    // Sử dụng Intersection Observer để lazy load ảnh
+    let lazyImages = this.$refs.container.querySelectorAll(".lazy-load");
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove("lazy-load");
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    lazyImages.forEach((img) => {
+      observer.observe(img);
+    });
   },
   unmounted() {
     Fancybox.destroy();
@@ -297,6 +188,20 @@ export default {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
+}
+
+/* lazy-load */
+.lazy-load {
+  filter: blur(10px);
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.lazy-load[src] {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .container {
