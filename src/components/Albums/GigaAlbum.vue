@@ -7,7 +7,7 @@
         data-fancybox="gallery"
         :data-caption="image.caption"
       >
-        <img :data-src="image.src" :alt="image.caption" class="lazy-load" />
+        <img :data-src="image.src" :alt="image.caption" class="lozad blur-up" />
       </a>
     </div>
   </div>
@@ -16,7 +16,7 @@
 
 <script>
 import { Fancybox } from "@fancyapps/ui";
-import "../../css/fancybox.css";
+import lozad from "lozad";
 
 import HeaderComp from "../Headers/Header1Comp.vue";
 import FooterComp from "../FooterComp.vue";
@@ -33,102 +33,83 @@ export default {
         {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,h_300,c_fill,q_50/v1722012141/IMG_1928_w1gciv.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012141/IMG_1928_w1gciv.png",
-          caption: "Title1",
         },
         {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,h_300,c_fill,q_50/v1722012140/IMG_1929_uygxhr.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto,e_sharpen/v1722012140/IMG_1929_uygxhr.png",
-          caption: "Title2",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012141/IMG_1930_m059zr.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_jpg/v1722012141/IMG_1930_m059zr.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012141/IMG_1930_m059zr.png",
-          caption: "Title3",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1931_mkl4fc.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_auto/v1722012144/IMG_1931_mkl4fc.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1931_mkl4fc.png",
-          caption: "Title4",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012145/IMG_1932_y0o96l.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012145/IMG_1932_y0o96l.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012145/IMG_1932_y0o96l.png",
-          caption: "Title5",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1933_t9lxns.png",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1933_t9lxns.png",
-          caption: "Title6",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_auto/v1722012142/IMG_1933_t9lxns.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/e_sharpen/v1722012142/IMG_1933_t9lxns.png",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1938_ghjocu.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012144/IMG_1938_ghjocu.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1938_ghjocu.png",
-          caption: "Title7",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1939_bpfbqh.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012144/IMG_1939_bpfbqh.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012144/IMG_1939_bpfbqh.png",
-          caption: "Title8",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012145/IMG_1940_zijefg.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012145/IMG_1940_zijefg.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012145/IMG_1940_zijefg.png",
           caption: "By accident",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1942_rucb8h.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012149/IMG_1942_rucb8h.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1942_rucb8h.png",
-          caption: "Title10",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012146/IMG_1943_ajvjj9.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012146/IMG_1943_ajvjj9.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012146/IMG_1943_ajvjj9.png",
-          caption: "Title11",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012146/IMG_1945_a7kk60.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012146/IMG_1945_a7kk60.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012146/IMG_1945_a7kk60.png",
-          caption: "Title12",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1946_b9vhrq.png",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1946_b9vhrq.png",
-          caption: "Title13",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012149/IMG_1946_b9vhrq.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto,e_sharpen/v1722012149/IMG_1946_b9vhrq.png",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012147/IMG_1950_rwxhmk.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012147/IMG_1950_rwxhmk.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012147/IMG_1950_rwxhmk.png",
-          caption: "Title14",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012150/IMG_1951_fwa8gz.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_auto/v1722012150/IMG_1951_fwa8gz.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012150/IMG_1951_fwa8gz.png",
-          caption: "Title15",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1952_kgegru.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012149/IMG_1952_kgegru.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012149/IMG_1952_kgegru.png",
-          caption: "Title16",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012140/IMG_1953_i8er5d.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1500,c_fill,q_auto,f_auto/v1722012140/IMG_1953_i8er5d.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012140/IMG_1953_i8er5d.png",
-          caption: "Title17",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012140/IMG_1954_wxwvqj.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012140/IMG_1954_wxwvqj.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012140/IMG_1954_wxwvqj.png",
-          caption: "Title18",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012156/IMG_1959_aqm7l4.png",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012156/IMG_1959_aqm7l4.png",
-          caption: "Title19",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,c_fill,q_auto,f_auto/v1722012156/IMG_1959_aqm7l4.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto,e_sharpen/v1722012156/IMG_1959_aqm7l4.png",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1961_yy4ezr.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_auto/v1722012142/IMG_1961_yy4ezr.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1961_yy4ezr.png",
-          caption: "Title20",
         },
       ],
     };
@@ -159,22 +140,16 @@ export default {
       defaultType: "ajax",
     });
 
-    // Sử dụng Intersection Observer để lazy load ảnh
-    let lazyImages = this.$refs.container.querySelectorAll(".lazy-load");
-    let observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          let img = entry.target;
-          img.src = img.dataset.src;
-          img.classList.remove("lazy-load");
-          observer.unobserve(img);
-        }
-      });
+    // Sử dụng Lozad để lazy load ảnh
+    const observer = lozad(".lozad", {
+      load: function (el) {
+        el.src = el.dataset.src;
+        el.onload = function () {
+          el.classList.add("fade");
+        };
+      },
     });
-
-    lazyImages.forEach((img) => {
-      observer.observe(img);
-    });
+    observer.observe();
   },
   unmounted() {
     Fancybox.destroy();
@@ -190,21 +165,9 @@ export default {
   background-color: var(--bg-color);
 }
 
-/* lazy-load */
-.lazy-load {
-  filter: blur(10px);
-  transition: filter 0.3s, opacity 0.3s;
-  opacity: 0.5;
-}
-
-.lazy-load[src] {
-  filter: blur(0);
-  opacity: 1;
-}
-
 .container {
   padding-top: 50px !important;
-  padding-bottom: 50px !important   ;
+  padding-bottom: 50px !important;
   width: 100%;
   margin: 0 auto;
   padding: 0px 90px;
@@ -287,6 +250,21 @@ export default {
 
 .grid-item:nth-child(20) {
   grid-column: span 3;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+  display: block;
 }
 
 @media (max-width: 996px) {
