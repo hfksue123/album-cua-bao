@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-
 body {
   font-family: "Comfortaa", sans-serif;
   margin: 0;
