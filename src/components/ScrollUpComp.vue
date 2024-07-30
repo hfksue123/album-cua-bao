@@ -48,10 +48,10 @@ export default {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.5s ease;
   z-index: 100;
-  animation: slideIn 0.8s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slideIn 0.8s ease-out, shadowEcho 1.5s infinite;
 }
 
 .icon {
@@ -59,7 +59,6 @@ export default {
   transition: transform 0.5s ease;
 }
 
-/* Keyframes cho hiệu ứng xuất hiện từ dưới lên */
 @keyframes slideIn {
   from {
     transform: translateY(20px);
@@ -71,6 +70,16 @@ export default {
   }
 }
 
+@keyframes shadowEcho {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(121, 121, 121, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(113, 113, 113, 0.4);
+  }
+}
+
 .scroll-to-top:hover {
   background-color: #4a69bd;
 }
@@ -78,6 +87,7 @@ export default {
 .scroll-to-top:hover .icon {
   transform: rotate(360deg);
 }
+
 @media (max-width: 500px) {
   .icon {
     font-size: 15px;

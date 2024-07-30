@@ -32,7 +32,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 #profile {
   background-color: #ff3838;
 }

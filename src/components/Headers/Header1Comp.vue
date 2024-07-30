@@ -14,6 +14,7 @@
     </div>
     <DownButton1 />
   </div>
+  <router-view />
 </template>
 
 <script>
@@ -157,6 +158,9 @@ h1 {
   }
 }
 @media (max-width: 576px) {
+  .concept-one {
+    background-image: url("../../assets/img/home/3-576px.jpg");
+  }
   .concept-one h1 {
     font-size: 50px;
     letter-spacing: 20px;

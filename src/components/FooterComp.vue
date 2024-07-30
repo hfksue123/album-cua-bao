@@ -74,7 +74,7 @@ a {
 #footer {
   background: #110916;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 0 5px;
   text-align: center;
 }
 
@@ -128,7 +128,7 @@ a {
 #social-icon {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -180,9 +180,10 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   margin-top: 20px;
   font-size: 14px;
+  opacity: 0.4;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #footer {
     padding: 10px 0;
   }
@@ -197,7 +198,7 @@ a {
     margin: 10px 0;
   }
   #copyright {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 </style>

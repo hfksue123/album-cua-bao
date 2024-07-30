@@ -3,7 +3,13 @@
     <loader-comp v-if="loading" />
     <div v-else>
       <nav-bar />
-      <router-view />
+
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </router-view>
+
       <scroll-up-comp />
     </div>
   </div>
@@ -30,6 +36,12 @@ export default {
     setTimeout(() => {
       this.loading = false;
     }, 2000);
+  },
+  activated() {
+    console.log("Component activated");
+  },
+  deactivated() {
+    console.log("Component deactivated");
   },
 };
 </script>

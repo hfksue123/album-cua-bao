@@ -27,21 +27,14 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .demo a {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
   color: #fff;
-  font: normal 400 20px/1 "Josefin Sans", sans-serif;
   letter-spacing: 0.1em;
   text-decoration: none;
   transition: opacity 0.3s;

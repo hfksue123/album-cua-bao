@@ -10,6 +10,9 @@ import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
 import ModalInactive from "@/components/ModalInactive.vue";
 import Header2Comp from "@/components/Headers/Header2Comp.vue";
 import AlbumTest from "@/components/AlbumTest.vue";
+import AlbumCompCopy from "@/components/AlbumComp copy.vue";
+import KtxAlbum from "@/components/Albums/KtxAlbum.vue";
+import KtxAlbum2 from "@/components/Albums/KtxAlbum2.vue";
 
 const routes = [
   { path: "/", component: AlbumComp },
@@ -21,6 +24,9 @@ const routes = [
   { path: "/giga", component: GigaAlbum },
   { path: "/albumtest", component: AlbumTest },
   { path: "/modal", component: ModalInactive },
+  { path: "/albumcoppy", component: AlbumCompCopy },
+  { path: "/ktx", component: KtxAlbum },
+  { path: "/ktx2", component: KtxAlbum2 },
   { path: "/:pathMatch(.*)*", component: AboutComp },
 ];
 
