@@ -157,7 +157,7 @@ a {
 }
 
 #social-icon li:nth-child(1) a {
-  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  background: linear-gradient(45deg, #7c1cde, #e6646c, #ffc51c);
 }
 
 #social-icon li:nth-child(2) a {

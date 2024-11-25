@@ -4,22 +4,7 @@
       <div class="hover">
         <div></div>
         <div></div>
-        <h1>C</h1>
-      </div>
-      <div class="hover">
-        <div></div>
-        <div></div>
-        <h1>A</h1>
-      </div>
-      <div class="hover">
-        <div></div>
-        <div></div>
-        <h1>N</h1>
-      </div>
-      <div class="hover">
-        <div></div>
-        <div></div>
-        <h1>Y</h1>
+        <h1>H</h1>
       </div>
       <div class="hover">
         <div></div>
@@ -29,14 +14,25 @@
       <div class="hover">
         <div></div>
         <div></div>
-        <h1>N</h1>
+        <h1>M</h1>
+      </div>
+      <div class="hover">
+        <div></div>
+        <div></div>
+        <h1>E</h1>
       </div>
     </div>
   </div>
+  <DownButton2 />
 </template>
 
 <script>
-export default {};
+import DownButton2 from "../DownButton/DownButton2.vue";
+export default {
+  components: {
+    DownButton2,
+  },
+};
 </script>
 
 <style scoped>
@@ -93,6 +89,7 @@ h1 {
   opacity: 0.5;
 }
 
+/* three */
 .concept-three {
   padding: 5em;
   background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/canyon.jpg)
@@ -109,7 +106,7 @@ h1 {
 .concept-three .hover {
   flex: 1;
   display: grid;
-  height: calc(100vh - 10em);
+  height: calc(100vh - 15em);
   grid: repeat(2, 2fr) / 100%;
   position: relative;
 }
@@ -133,8 +130,15 @@ h1 {
   left: 0;
   right: 0;
   top: 50%;
+  text-align: center;
   margin-top: -30px;
   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 0;
+}
+
+@media (max-width: 500px) {
+  .concept-three {
+    padding: 4em;
+  }
 }
 </style>

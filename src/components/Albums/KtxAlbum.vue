@@ -90,7 +90,7 @@ export default {
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277966/FE7A0590_sfjnlj.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto/v1722277967/FE7A0630_byjfkl.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto/v1722277967/FE7A0630_byjfkl.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277967/FE7A0630_byjfkl.jpg",
         },
         {
@@ -272,7 +272,7 @@ export default {
 }
 
 .grid-item:nth-child(6) {
-  grid-row: span 3;
+  grid-row: span 2;
   grid-column: span 2;
 }
 
@@ -315,11 +315,11 @@ export default {
 
 .grid-item:nth-child(19) {
   grid-column: span 1;
-  grid-row: span 3;
+  grid-row: span 2;
 }
 
 .grid-item:nth-child(20) {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 @keyframes fade {
@@ -359,13 +359,18 @@ export default {
   }
 
   .grid-item:nth-child(2) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
   }
 
   .grid-item:nth-child(6) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .grid-item:nth-child(12) {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
   }
 
   .grid-item:nth-child(15) {
@@ -378,7 +383,7 @@ export default {
     grid-row: span 2;
   }
   .grid-item:nth-child(19) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
   }
   .grid-item:nth-child(20) {

@@ -9,13 +9,13 @@
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">HOME</div>
           <div class="topic">by ME</div>
           <div class="des">
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <router-link id="btnSeeAlbum" to="/album"
+          <router-link id="btnSeeAlbum" to="/home"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>
@@ -34,7 +34,9 @@
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/album"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
       <div
@@ -45,13 +47,14 @@
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">GIGAMALL</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
-            tại Sài Gòn.
+            Chỉ là những bức ảnh được chụp tại lần đi chơi ở GIGAMALL.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/giga"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
       <div
@@ -68,7 +71,9 @@
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/ktx"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
       <div
@@ -79,13 +84,15 @@
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">SÀI GÒN</div>
           <div class="topic">by ME</div>
           <div class="des">
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/album"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
       <div
@@ -102,7 +109,9 @@
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/album"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
       <div
@@ -119,7 +128,9 @@
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <a id="btnSeeAlbum"><span>Go to Album</span><em></em></a>
+          <router-link id="btnSeeAlbum" to="/album"
+            ><span>Go to Album</span><em></em
+          ></router-link>
         </div>
       </div>
     </div>

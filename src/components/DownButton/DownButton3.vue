@@ -27,11 +27,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .demo a {
   position: absolute;
   bottom: 50px;

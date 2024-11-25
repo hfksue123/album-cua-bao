@@ -310,7 +310,7 @@ import Typed from "typed.js";
 
 export default {
   mounted() {
-    var options = {
+    const options = {
       strings: [
         "Hello, I'm a <span class='highlight'>Web Developer !</span>",
         "I'm a <span class='highlight'>Photographer</span> too!",

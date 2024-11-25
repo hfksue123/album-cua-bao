@@ -42,31 +42,67 @@ export default {
   },
   data() {
     return {
-      // w_500,q_auto,f_auto
+      // w_800,q_auto,f_auto
       images: [
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722277972/FE7A0809_lyev5b.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277972/FE7A0809_lyev5b.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277972/FE7A0809_lyev5b.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722277974/FE7A0817_e88rhn.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277974/FE7A0817_e88rhn.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277974/FE7A0817_e88rhn.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722277975/FE7A9881_cibccl.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277975/FE7A9881_cibccl.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277975/FE7A9881_cibccl.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722277974/FE7A9903_qrceyv.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277974/FE7A9903_qrceyv.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277974/FE7A9903_qrceyv.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277975/IMG_2217_hjy3xs.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277975/IMG_2217_hjy3xs.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277975/IMG_2217_hjy3xs.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722277976/IMG_2255_bohgzp.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277976/IMG_2255_bohgzp.jpg",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277976/IMG_2255_bohgzp.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742969/FE7A9985_hwypv1.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A9985_hwypv1.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1200,q_auto,f_auto/v1730742969/FE7A0019_cbglsd.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A0019_cbglsd.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742969/FE7A0584_qgkwhi.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A0584_qgkwhi.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742970/FE7A9986_fple7v.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742970/FE7A9986_fple7v.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742972/FE7A9993_dxnuj4.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9993_dxnuj4.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742973/FE7A0047_lez3ug.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742973/FE7A0047_lez3ug.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742973/FE7A9946_ojffgf.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742973/FE7A9946_ojffgf.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742972/FE7A9989_x85qdc.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9989_x85qdc.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1730742972/FE7A9996_owwhxb.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9996_owwhxb.jpg",
         },
       ],
       totalPages: 2, // Số trang tổng cộng, có thể thay đổi
@@ -232,12 +268,23 @@ export default {
   grid-column: span 1;
 }
 
-.grid-item:nth-child(12) {
+.grid-item:nth-child(8) {
+  grid-row: span 2;
   grid-column: span 2;
 }
 
+.grid-item:nth-child(11) {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.grid-item:nth-child(12) {
+  grid-column: span 1;
+}
+
 .grid-item:nth-child(15) {
-  grid-column: span 3;
+  grid-row: span 1;
+  grid-column: span 1;
 }
 
 .grid-item:nth-child(17) {
@@ -297,22 +344,21 @@ export default {
     grid-column: span 2;
     grid-row: span 2;
   }
-
-  .grid-item:nth-child(15) {
+  .grid-item:nth-child(8) {
     grid-column: span 2;
-    grid-row: span 1;
+    grid-row: span 2;
   }
-
-  .grid-item:nth-child(17) {
+  .grid-item:nth-child(10) {
     grid-column: span 1;
     grid-row: span 2;
   }
-  .grid-item:nth-child(19) {
-    grid-column: span 2;
-    grid-row: span 1;
+  .grid-item:nth-child(14) {
+    grid-column: span 1;
+    grid-row: span 2;
   }
-  .grid-item:nth-child(20) {
-    grid-column: span 2;
+  .grid-item:nth-child(15) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
 </style>

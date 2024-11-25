@@ -7,6 +7,7 @@
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/ktx" @click="closeDropdown">Info</router-link>
         <router-link to="/profile" @click="closeDropdown">Test</router-link>
+        <router-link to="/test" @click="closeDropdown">Test2</router-link>
       </nav>
       <div
         class="toggle-btn"
@@ -22,6 +23,7 @@
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/ktx" @click="closeDropdown">Info</router-link>
+        <router-link to="/test" @click="closeDropdown">Info</router-link>
       </div>
     </div>
   </div>

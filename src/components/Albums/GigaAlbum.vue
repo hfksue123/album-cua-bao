@@ -249,11 +249,11 @@ export default {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
-  transform: translateX(-7%);
+  transform: translateX(-5%);
 }
 
 .grid-item:hover img {
-  transform: translateX(0.1px);
+  transform: translateX(0);
 }
 
 .grid-item:nth-child(2) {

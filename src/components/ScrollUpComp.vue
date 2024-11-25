@@ -81,7 +81,7 @@ export default {
 }
 
 .scroll-to-top:hover {
-  background-color: #4a69bd;
+  background-color: var(--main-color);
 }
 
 .scroll-to-top:hover .icon {
