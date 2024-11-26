@@ -50,7 +50,7 @@
           <div class="name">GIGAMALL</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Chỉ là những bức ảnh được chụp tại lần đi chơi ở GIGAMALL.
+            Một kỉ niệm cùng những người bạn dưới quê tại Gigamall.
           </div>
           <router-link id="btnSeeAlbum" to="/giga"
             ><span>Go to Album</span><em></em

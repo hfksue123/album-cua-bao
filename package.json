@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve --no-lint",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier --write .",
-    "deploy": "vue-cli-service build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
@@ -46,7 +46,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "prettier": "^2.8.8"
   },
   "eslintConfig": {

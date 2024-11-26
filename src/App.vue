@@ -35,7 +35,7 @@ export default {
   created() {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, 2000000);
   },
   activated() {
     console.log("Component activated");
@@ -56,6 +56,9 @@ html {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+*:focus {
+  outline: none;
 }
 :root {
   --bg-color: #2c3e50;

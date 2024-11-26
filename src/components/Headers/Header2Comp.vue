@@ -32,16 +32,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  font-family: "Comfortaa", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .main-content {
   text-align: center;
   scroll-snap-type: y mandatory;
