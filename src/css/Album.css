@@ -140,12 +140,11 @@ a {
   font-weight: bold;
   line-height: 60px;
   opacity: 0;
-  animation: showcontentFromLeft 1s ease-in-out 1.5s forwards, lights 5s infinite alternate;
+  animation: showcontentFromLeft 1s ease-in-out 1.5s forwards, lights 4s infinite alternate;
 }
 
 @keyframes lights {
   0% {
-    color: hsl(230, 40%, 80%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.2),
       0 0 0.125em hsla(320, 100%, 60%, 0.3),
@@ -154,7 +153,6 @@ a {
   }
 
   30% {
-    color: hsl(230, 80%, 90%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.5),
       0 0 0.125em hsla(320, 100%, 60%, 0.5),
@@ -163,7 +161,6 @@ a {
   }
 
   40% {
-    color: hsl(230, 100%, 95%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.5),
       0 0 0.125em hsla(320, 100%, 90%, 0.5),
@@ -172,7 +169,6 @@ a {
   }
 
   70% {
-    color: hsl(230, 80%, 90%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.5),
       0 0 0.125em hsla(320, 100%, 60%, 0.5),
@@ -181,7 +177,6 @@ a {
   }
 
   100% {
-    color: hsl(230, 40%, 80%);
     text-shadow:
       0 0 1em hsla(320, 100%, 50%, 0.2),
       0 0 0.125em hsla(320, 100%, 60%, 0.3),
