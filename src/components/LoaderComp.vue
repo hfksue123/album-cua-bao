@@ -45,7 +45,6 @@ export default {};
   background-color: #131417;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 p {
@@ -61,6 +60,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .animate {
@@ -499,13 +499,14 @@ p {
   /* Tweak the position for the scroll loader */
   .scroll-loader {
     left: 43%;
-    top: 32%;
+    top: 29%;
   }
   /* Loading... */
   #load {
     width: 500px;
     height: 30px;
     margin-left: -250px;
+    overflow: hidden;
   }
 
   #load div {

@@ -35,7 +35,7 @@ export default {
   created() {
     setTimeout(() => {
       this.loading = false;
-    }, 2000000);
+    }, 5000);
   },
   activated() {
     console.log("Component activated");
