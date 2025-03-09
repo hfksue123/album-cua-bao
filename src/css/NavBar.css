@@ -21,6 +21,7 @@
   margin-left: 90px;
   transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
 }
+
 .navbar.shrink {
   gap: 5px;
   margin-right: 65px;
@@ -32,9 +33,19 @@
   padding: 5px;
   transition: font-size 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
-.toggle-btn.shrink .fa-bars {
-  transform: translateX(35px);
-  transition: font-size 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+.toggle-btn.isShrunk {
+  width: 20px; /* Giảm kích thước khi cuộn xuống */
+  height: 18px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.toggle-btn.isShrunk.open .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(10px); /* Thay đổi vị trí khi shrink */
+}
+
+.toggle-btn.isShrunk.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px); /* Thay đổi vị trí khi shrink */
 }
 
 /* General styles */
@@ -52,9 +63,11 @@ a {
   left: 0px;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom,
-      rgba(23, 23, 23, 1) 0%,
-      rgba(23, 23, 23, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(23, 23, 23, 0) 100%
+  );
   z-index: 999;
   transition: height 0.3s ease-in-out;
 }
@@ -75,10 +88,12 @@ a {
 }
 
 a {
-  background-image: linear-gradient(to right,
-      var(--main-color),
-      var(--main-color) 50%,
-      #ffffff 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--main-color) 50%,
+    #ffffff 50%
+  );
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -89,7 +104,8 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before {
+/* Hiệu ứng hover cho các thẻ a trong màn hình desktop */
+.navbar a:before {
   content: "";
   background: var(--main-color);
   display: block;
@@ -101,11 +117,11 @@ a:before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
+.navbar a:hover {
   background-position: 0;
 }
 
-a:hover::before {
+.navbar a:hover::before {
   width: 100%;
 }
 
@@ -116,49 +132,111 @@ a:hover::before {
   transition: gap 0.3s ease-in-out, margin-right 0.3s ease-in-out;
 }
 
+/* Toggle Button Styles */
 .toggle-btn {
-  display: none;
-  font-size: 24px;
-  color: #eee;
+  display: none; /* Ẩn mặc định, sẽ hiển thị qua media queries */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 15px; /* Tạo khoảng cách từ lề phải */
   position: relative;
-  left: -50px;
+  z-index: 1001; /* Đảm bảo toggle-btn nằm trên dropdown */
 }
 
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center; /* Đặt điểm xoay ở trung tâm */
+}
+
+.toggle-btn.open .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(13px);
+}
+.toggle-btn.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.toggle-btn.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-15px);
+}
+
+/* Các thiết lập chung cho dropdown */
 .dropdown {
   display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  width: 300px;
-  height: 0;
-  z-index: 100;
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-  transition: height 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), top 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px; /* Tăng chiều rộng để chứa logo và các liên kết */
+  height: 100vh;
+  background-color: var(--second-bg-color);
+  transition: left 0.5s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(5, 6, 6, 0.8), 0 0 30px rgba(5, 6, 6, 0.6);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px; /* Thêm padding cho footer */
+}
+
+/* Khi dropdown mở */
+.dropdown.open {
+  left: 0; /* Đưa dropdown vào màn hình */
+}
+
+/* Logo trong dropdown */
+.dropdown-logo {
+  font-size: 25px;
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Footer text dropdown */
+.dropdown-footer {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
 }
 
 .dropdown a {
-  padding: 10px;
-  color: #eee;
-  margin: 5px 0;
-  display: flex;
-  justify-content: center;
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+.dropdown a:hover {
+  background-color: #444; /* Thay đổi màu nền khi hover */
+  transform: translateX(10px); /* Di chuyển một chút sang phải khi hover */
 }
 
-.dropdown.open {
-  height: 150px;
+/* Ẩn toggle-btn trên màn hình lớn */
+@media (min-width: 992px) {
+  .toggle-btn {
+    display: none;
+  }
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 992px) {
+/* Hiển thị toggle-btn trên màn hình nhỏ */
+@media (max-width: 991px) {
   .navbar {
     display: none;
   }
 
   .toggle-btn {
-    display: block;
+    display: flex; /* Hiển thị toggle-btn */
   }
 
   .dropdown {
@@ -177,7 +255,7 @@ a:hover::before {
   }
 
   .toggle-btn {
-    display: block;
+    display: flex;
   }
 
   .dropdown {
@@ -190,7 +268,7 @@ a:hover::before {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 400px) {
   .navbar {
     display: none;
   }
@@ -203,9 +281,12 @@ a:hover::before {
     font-size: 20px;
     margin-left: 15px;
   }
+  .top-section a {
+    margin-right: 0;
+  }
 
   .toggle-btn {
-    display: block;
+    display: flex;
   }
 
   .dropdown {

@@ -33,32 +33,25 @@ export default {
     };
   },
   created() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 5000);
-  },
-  activated() {
-    console.log("Component activated");
-  },
-  deactivated() {
-    console.log("Component deactivated");
+    window.onload = () => {
+      setTimeout(() => {
+        this.loading = false;
+      }, 3000);
+    };
   },
 };
 </script>
 
 <style>
-html {
+html,
+body {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-}
-*:focus {
-  outline: none;
 }
 :root {
   --bg-color: #2c3e50;
@@ -67,15 +60,13 @@ html {
   --main-color: #00ffee;
 }
 html::-webkit-scrollbar {
-  width: 5px !important;
+  width: 5px;
 }
-
 html::-webkit-scrollbar-track {
   background-color: var(--bg-color);
   border-radius: 5px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
 html::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 5px;

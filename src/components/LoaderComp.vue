@@ -12,7 +12,7 @@
       <div>L</div>
     </div>
 
-    <main class="container">
+    <div class="container-load">
       <p>Hello 👋 I'm</p>
       <section class="animate">
         <div class="first">
@@ -25,7 +25,7 @@
           <div>Photographer</div>
         </div>
       </section>
-    </main>
+    </div>
 
     <blockquote class="info">
       my facebook <a href="https://www.facebook.com/hfksue123">BaoNguyen</a>
@@ -34,7 +34,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.disableScroll();
+  },
+  beforeUnmount() {
+    this.enableScroll();
+  },
+  methods: {
+    disableScroll() {
+      document.body.style.overflow = "hidden"; // Khóa cuộn
+    },
+    enableScroll() {
+      document.body.style.overflow = ""; // Khôi phục cuộn
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -42,9 +57,9 @@ export default {};
 
 .loading {
   font-family: "Roboto";
-  background-color: #131417;
-  padding: 0;
-  margin: 0;
+  background-color: #161616;
+  height: 100vh;
+  overflow: hidden !important;
 }
 
 p {
@@ -52,15 +67,15 @@ p {
     0 0 3px rgba(255, 255, 255, 0.3);
 }
 
-.container {
+.container-load {
   color: #e5e5e5;
   font-size: 2.26rem;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
   align-items: center;
+  overflow: hidden !important;
   justify-content: center;
-  overflow: hidden;
 }
 
 .animate {
@@ -142,13 +157,12 @@ p {
   left: 50%;
   top: 40%;
   margin-left: -300px;
-  overflow: visible;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  text-shadow: 0 0 7px rgba(0, 255, 255, 0.3), 0 0 3px rgba(0, 255, 255, 0.3);
+  text-shadow: 0 0 7px rgba(0, 255, 255, 0.5), 0 0 3px rgba(0, 255, 255, 0.5);
 }
 
 #load div {
@@ -430,7 +444,7 @@ p {
 }
 
 /* Media Query for screens less than 500px */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   body {
     font-size: 1rem;
   }
@@ -439,7 +453,7 @@ p {
     font-size: 1.2rem;
   }
 
-  .container {
+  .container-load {
     font-size: 1.5rem;
   }
 
@@ -503,10 +517,10 @@ p {
   }
   /* Loading... */
   #load {
-    width: 500px;
-    height: 30px;
-    margin-left: -250px;
-    overflow: hidden;
+    max-width: 300px;
+    height: 35px;
+    top: 41%;
+    margin-left: -180px;
   }
 
   #load div {

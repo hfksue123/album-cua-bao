@@ -1,204 +1,224 @@
 <template>
-  <footer class="footer-container" id="footer">
-    <ul id="link">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">See More</a></li>
-    </ul>
-    <hr id="line" />
-    <p id="content">
-      Website này được tạo ra bằng html, css, js thuần bởi
-      <a href="#" id="author">Bao Nguyen</a>, mục đích chính của trang web này
-      để mình chia sẻ những bức ảnh của mình chụp lên đây để cho mọi người cùng
-      thưởng thức những bức ảnh mình đã chụp (có vài bộ chưa xuất hiện trên fb
-      cá nhân) và cũng là nơi để mình lưu giữ những kỷ niệm. Cảm ơn mọi người đã
-      dành thời gian ghé thăm ^^
-    </p>
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Section -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>HFKSUE123</h2>
+          </div>
+          <p class="footer-description">
+            Website này được tạo bởi
+            <a href="#" id="author">Bảo Nguyễn</a> để chia sẻ những bức ảnh mình
+            chụp, bao gồm một số bộ chưa xuất hiện trên Facebook. Đây cũng là
+            nơi lưu giữ kỷ niệm. Cảm ơn mọi người đã ghé thăm! 😊
+          </p>
+        </div>
 
-    <ul id="social-icon">
-      <li>
-        <a href="#"
-          ><font-awesome-icon :icon="['fab', 'instagram']" class="icon"
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><font-awesome-icon :icon="['fab', 'facebook']" class="icon"
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><font-awesome-icon :icon="['fab', 'youtube']" class="icon"
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><font-awesome-icon :icon="['fas', 'heart']" class="icon"
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><font-awesome-icon :icon="['fab', 'threads']" class="icon"
-        /></a>
-      </li>
-    </ul>
+        <!-- Latest Photos Section -->
+        <div class="footer-column">
+          <h3 class="footer-title">Latest Albums</h3>
+          <div class="footer-photos">
+            <div
+              class="photo"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1633635146842-12d386e64058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+              "
+            ></div>
+            <div
+              class="photo"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1568444438385-ece31a33ce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+              "
+            ></div>
+            <div
+              class="photo"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1633515257379-5fda985bd57a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+              "
+            ></div>
+            <div
+              class="photo"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1633209931146-260ce0d16e22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+              "
+            ></div>
+          </div>
+        </div>
 
-    <p id="copyright">&#64;hfksue123 &copy; 2024 All Rights Reserved</p>
+        <!-- Contact Section -->
+        <div class="footer-column">
+          <h3 class="footer-title">Contact me</h3>
+          <ul class="footer-contacts">
+            <li>
+              Email:
+              <a href="mailto:baosum01@gmail.com">baosum01@gmail.com</a>
+            </li>
+            <li>
+              FB: <a href="https://www.facebook.com/hfksue123">Nguyen Bao</a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright © 2024 hfksue123. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
-  <ScrollUpComp />
 </template>
 
 <script>
-import ScrollUpComp from "./ScrollUpComp.vue";
 export default {
-  name: "FooterComponent",
-  components: {
-    ScrollUpComp,
-  },
+  name: "CustomFooter",
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300");
-
-html,
-body {
-  margin: 0;
-  padding: 0;
+.custom-footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
 
-a {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Căn giữa nội dung */
+  gap: 100px; /* Tăng khoảng cách giữa các cột */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 280px; /* Giữ độ rộng tối thiểu để không bị thu nhỏ quá mức */
+  max-width: 33%; /* Giới hạn chiều rộng */
+  text-align: left;
+}
+
+.footer-logo h2 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ccc;
+  word-spacing: 1px;
+  text-align: justify;
+  /* text-align: justify; */
+}
+
+.footer-description a {
+  color: var(--main-color);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-#footer {
-  background: #110916;
+.footer-description a:hover {
   color: #fff;
-  padding: 20px 0 5px;
-  text-align: center;
 }
 
-#link {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+.footer-title {
   font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--main-color);
+  padding-left: 10px;
 }
 
-#link li {
-  display: inline;
-  margin: 0 10px;
+.footer-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
 }
 
-#link a {
-  color: #fff;
-  transition: color 0.3s ease;
+.footer-photos img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-#link a:hover {
-  color: #4a69bd;
+.footer-photos img:hover {
+  transform: scale(1.05);
 }
 
-#line {
-  margin: 20px auto;
-  width: 80%;
-  border: 1px solid #fff;
+.photo {
+  width: 100%;
+  padding-top: 100%; /* Đảm bảo khung vuông */
+  background-size: cover; /* Ảnh lấp đầy khung */
+  background-position: center; /* Hiển thị trung tâm */
+  transition: transform 0.3s ease-in-out;
 }
 
-#content {
-  margin: 20px 50px 10px 50px;
-  font-family: "Roboto Condensed", sans-serif;
-  line-height: 1.6;
+.photo:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
 }
-
-#author {
-  color: #8408ff;
-  transition: color 0.3s ease;
-  font-style: italic;
-}
-
-#author:hover {
-  color: #fff;
-}
-
-#social-icon {
+.footer-contacts {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
 }
 
-#social-icon li {
-  display: inline-block;
-}
-
-#social-icon li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #110916;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-#social-icon li a:hover {
-  background-color: #4a69bd;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-#social-icon li:nth-child(1) a {
-  background: linear-gradient(45deg, #7c1cde, #e6646c, #ffc51c);
-}
-
-#social-icon li:nth-child(2) a {
-  background: #3b5999;
-}
-
-#social-icon li:nth-child(3) a {
-  background: #ff0000;
-}
-
-#social-icon li:nth-child(4) a {
-  background: #e2a200;
-}
-
-#social-icon li:nth-child(5) a {
-  background: #fff;
-}
-
-#copyright {
-  font-family: "Roboto Condensed", sans-serif;
-  margin-top: 20px;
+.footer-contacts li {
+  margin-bottom: 10px;
   font-size: 14px;
-  opacity: 0.4;
 }
 
-@media (max-width: 450px) {
-  #footer {
-    padding: 10px 0;
+.footer-contacts a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contacts a:hover {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #777;
+  margin-top: 23px;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    justify-content: center;
+    gap: 30px;
   }
-  #content {
-    margin: 10px;
-    line-height: 1.1;
+
+  .footer-column {
+    max-width: 45%; /* Hai cột mỗi hàng */
+    text-align: center;
   }
-  #line {
-    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
-  #social-icon {
-    margin: 10px 0;
+
+  .footer-column {
+    max-width: 100%;
+    text-align: center;
   }
-  #copyright {
-    margin-top: 0px;
+
+  .footer-title {
+    text-align: left;
+  }
+
+  .footer-photos {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 }
 </style>

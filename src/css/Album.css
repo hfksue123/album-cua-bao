@@ -5,13 +5,6 @@
 
 body {
   font-family: "Phudu", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
@@ -19,12 +12,13 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/img/background/cat.png");
+  width: 100vw;
+  height: 100%;
+  background-color: var(--second-bg-color);
+  /* background-image: url("../assets/img/background/cat.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 40%;
+  background-size: auto 40%; */
   box-shadow: 0 30px 50px #dbdbdb;
   overflow: hidden;
 }
@@ -33,11 +27,9 @@ a {
   width: max-content;
 }
 
-.item {
+/* .item {
   width: 180px;
-  /* Giảm kích thước width */
   height: 270px;
-  /* Giảm kích thước height */
   background-position: 55% 50%;
   display: inline-block;
   transition: 0.8s;
@@ -50,7 +42,7 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(255, 255, 255, 0.6);
   overflow: hidden;
-}
+} */
 
 .item {
   width: 180px;
@@ -84,17 +76,14 @@ a {
 
 .item:nth-child(4) {
   left: calc(50% + 200px);
-  /* Giảm khoảng cách */
 }
 
 .item:nth-child(5) {
   left: calc(50% + 400px);
-  /* Giảm khoảng cách */
 }
 
 .item:nth-child(n + 6) {
   left: calc(50% + 600px);
-  /* Giảm khoảng cách */
   opacity: 0;
 }
 
@@ -140,7 +129,7 @@ a {
   font-weight: bold;
   line-height: 60px;
   opacity: 0;
-  animation: showcontentFromLeft 1s ease-in-out 1.5s forwards, lights 4s infinite alternate;
+  animation: showcontentFromLeft 1s ease-in-out 1.5s forwards, lights 3.5s infinite alternate;
 }
 
 @keyframes lights {
@@ -208,7 +197,6 @@ a {
   opacity: 0;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
-  /* Background color với alpha */
   border: 1px solid #fff;
   width: 250px;
   height: 63px;
@@ -219,7 +207,6 @@ a {
   box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.34);
   animation: showcontent 1s ease-in-out 0.2s forwards;
   backdrop-filter: blur(1px);
-  /* Áp dụng hiệu ứng blur */
 }
 
 #btnSeeAlbum::before {
@@ -411,10 +398,6 @@ a {
 }
 
 @media (max-width: 576px) {
-  .container {
-    background-size: auto 25%;
-  }
-
   header .logo {
     font-size: 30px;
     margin-left: 20px;
@@ -435,15 +418,16 @@ a {
   }
 
   .item {
-    width: 140px;
-    height: 251px;
-    transform: translate(15%, -35%);
-    background-position: 80% 50%;
+    width: 110px;
+    height: 220px;
+    transform: translate(30%, -35%);
+    background-position: 70% 50%;
   }
 
   .item .name {
     font-size: 45px;
-    padding-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     line-height: 50px;
   }
 

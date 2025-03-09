@@ -15,7 +15,6 @@ library.add(fas, far, fab);
 // Import jQuery and Lightbox
 import "jquery";
 import "./registerServiceWorker";
-import "./registerServiceWorker";
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);

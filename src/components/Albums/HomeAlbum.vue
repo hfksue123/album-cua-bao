@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       popupContent:
-        "<br><b>&#10149; Name:</b> HOME (Page 1: Tết)<br><b>&#10149; Combo:</b> canon 600d + 50ii<br><b>&#10149; Time:</b> Tết âm lịch 2022<br><br> Đây là bộ ảnh đầu tiên kể từ lúc mình bắt đầu tập chơi ảnh nên chất lượng sẽ hơi bị out nét đôi chút. Enjoy!!! &#10084;",
+        "<br><b>&#10149; Name:</b> HOME (Page 1: Tết)<br><b>&#10149; Combo:</b> canon 600d + 50ii<br><b>&#10149; Time:</b> Tết âm lịch 2022<br><br> Đây là bộ ảnh đầu tiên kể từ lúc mình bắt đầu tập chơi ảnh nên chất lượng sẽ hơi bị out nét đôi chút. Enjoy!!! ❤️",
       images: [
         {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1732530837/3_fqrxom.png",

@@ -171,19 +171,20 @@ body {
 .popup-content {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.2); /* Nền trong suốt */
-  backdrop-filter: blur(10px); /* Làm mờ vùng nền phía sau */
-  padding: 10px;
-  border-radius: 8px;
-  text-align: left;
-  box-shadow: 0 1px 5px var(--main-color);
+  background: linear-gradient(135deg, #39938a, #044d46); /* Sử dụng gradient */
+  backdrop-filter: blur(10px); /* Giữ hiệu ứng làm mờ */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center; /* Căn giữa nội dung */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   width: 80%;
   max-width: 500px;
   opacity: 0;
   transform: scale(0.8);
   animation: popupFadeIn 0.5s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
-  color: white; /* Đổi màu chữ thành trắng */
+  color: #fff; /* Đổi màu chữ */
+  border: 2px solid hsla(var(--hue), 100%, 50%, 0.5); /* Thêm viền nhẹ */
 }
 
 .popup-body {
@@ -229,43 +230,44 @@ body {
 .ok-btn {
   background: linear-gradient(135deg, #4fd1c5, #38a89d);
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 50px;
+  border: 1px solid hsla(var(--hue), 100%, 50%, 0.8);
+  border-radius: 20px;
+  padding: 12px 50px;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .ok-btn:hover {
   background: linear-gradient(135deg, #38a89d, #2c8673);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .close-btn {
   position: absolute;
-  top: -10px; /* Đẩy nút lên trên viền */
-  right: -10px; /* Đẩy nút sang phải ngoài viền */
-  background-color: gray;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(135deg, #f56565, #e53e3e); /* Gradient đỏ */
   color: white;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .close-btn:hover {
-  background-color: rgb(79, 79, 79);
+  background: linear-gradient(135deg, #e53e3e, #c53030);
+  transform: scale(1.1);
 }
 
 .fade-enter-active,

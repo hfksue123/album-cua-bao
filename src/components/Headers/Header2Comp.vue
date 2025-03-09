@@ -48,8 +48,8 @@ h1 {
 h1 {
   position: relative;
   color: #fff;
-  font: 900 60px Montserrat;
   text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  font-size: 60px;
 }
 
 .concept {

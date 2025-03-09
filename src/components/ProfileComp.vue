@@ -7,27 +7,28 @@
       </div>
     </div>
     <div class="home-contain">
-      <h1>Hi, I'm <span id="bao">Bảo</span></h1>
+      <h1>Hi, <span id="bao">Bảo đây</span>🩵</h1>
       <h3 class="typing-text">
         <div id="element"></div>
       </h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-        natus, commodi asperiores esse dignissimos ab beatae nihil saepe quidem!
-        Aliquam dolor velit itaque dolorem soluta omnis tempore rerum explicabo
-        doloremque.
+        Trang web được tối ưu trên thiết bị desktop và mobile vì vậy khuyến
+        khích mọi người sử dụng những thiết bị này để được trải nghiệm tốt nhất
+        nhé. Có thể đi tiếp để sang gallery ảnh hoặc đọc thêm hướng dẫn ở 2 nút
+        bên dưới.
       </p>
 
       <div class="social-icon-profile">
         <a href="#" title="facebook"
           ><font-awesome-icon :icon="['fab', 'facebook-f']"
         /></a>
-        <a href="#"><font-awesome-icon :icon="['fab', 'x-twitter']" /></a>
+        <a href="#"><font-awesome-icon :icon="['fab', 'threads']" /></a>
         <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
         <a href="#"><font-awesome-icon :icon="['far', 'heart']" /></a>
       </div>
 
-      <a href="#" class="btn-profile">Contact Me</a>
+      <a href="#" class="btn-profile">Hướng dẫn</a>
+      <a href="#" class="btn-profile">To gallery</a>
     </div>
   </section>
 </template>
@@ -42,6 +43,7 @@ section {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .home {
@@ -77,6 +79,7 @@ section {
   font-size: 40px;
   margin-bottom: 1rem;
   font-weight: 700;
+  overflow: hidden;
 }
 
 .home-img .main_img {
@@ -135,6 +138,7 @@ section {
 .home-contain p {
   font-size: 18px;
   font-weight: 400;
+  text-align: justify;
 }
 
 .social-icon-profile a {
@@ -171,6 +175,7 @@ section {
   font-weight: 600;
   transition: 0.3s ease;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 
 .btn-profile:hover {
@@ -207,7 +212,7 @@ section {
 @media (max-width: 1200px) {
   .home {
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .home-img {
@@ -228,52 +233,15 @@ section {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 400px) {
   .home-img .main_img {
-    width: 50vh;
-    height: 50vh;
+    width: 45vh;
+    height: 45vh;
   }
 
   .home .home-contain h1 {
-    font-size: 50px;
-  }
-
-  .home-contain h3 {
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
-  .home-contain p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .social-icon-profile a {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    margin: 10px 8px 10px 0;
-  }
-  .btn-profile {
-    padding: 10px 20px;
-    border-radius: 4rem;
-    font-size: 15px;
-    margin-top: 5px;
-  }
-}
-.typing-text {
-  font-size: 24px;
-}
-html::-webkit-scrollbar {
-  width: 0.3rem;
-}
-
-@media (max-width: 450px) {
-  .home-img .main_img {
-    width: 44vh;
-    height: 44vh;
-  }
-
-  .home .home-contain h1 {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 1.5;
   }
 
   .home-contain h3 {
@@ -300,8 +268,11 @@ html::-webkit-scrollbar {
 .typing-text {
   font-size: 24px;
 }
-html::-webkit-scrollbar {
-  width: 0.3rem;
+@media (max-width: 300px) {
+  .home-img .main_img {
+    width: 35vh;
+    height: 35vh;
+  }
 }
 </style>
 
@@ -316,7 +287,7 @@ export default {
         "I'm a <span class='highlight'>Photographer</span> too!",
         "I'm a <span class='highlight'>Designer</span> as well!",
         "And.......",
-        "I'm still <span class='highlight_red'>SINGLE</span> :((",
+        "I'm still <span class='highlight_red'>SINGLE</span> ",
       ],
       typeSpeed: 10,
       backSpeed: 20,
