@@ -80,7 +80,7 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.7), transparent);
+  background: radial-gradient(circle, rgba(93, 93, 93, 0.39), transparent);
   opacity: 0;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -92,7 +92,7 @@ h1 {
 /* three */
 .concept-three {
   padding: 5em;
-  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/canyon.jpg)
+  background: url(https://res.cloudinary.com/ddhyr7ejn/image/upload/w_2000,q_auto,f_auto/v1741591586/IMG_2537_ygh6zu.jpg)
     center center / cover;
 }
 

@@ -124,6 +124,10 @@ export default {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/c_fill,q_auto,f_auto/v1722012142/IMG_1961_yy4ezr.png",
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012142/IMG_1961_yy4ezr.png",
         },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto/v1741589423/received_474364530860768_awmsv6.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741589423/received_474364530860768_awmsv6.png",
+        },
       ],
       totalPages: 1, // Số trang tổng cộng, có thể thay đổi
       links: ["/giga"],
@@ -292,7 +296,7 @@ export default {
 }
 
 .grid-item:nth-child(20) {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 @keyframes fade {
@@ -355,7 +359,7 @@ export default {
     grid-row: span 1;
   }
   .grid-item:nth-child(20) {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 }
 </style>

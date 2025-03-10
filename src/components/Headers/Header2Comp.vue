@@ -116,7 +116,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("../../assets/img/home/4-576px.jpg");
+    background-image: url("https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000/v1741605754/FE7A0645_hn5da0.jpg");
   }
 
   .concept-two .hover {

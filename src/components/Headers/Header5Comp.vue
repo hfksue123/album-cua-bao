@@ -1,17 +1,23 @@
 <template>
   <div class="concept concept-six">
     <h1 class="word">
+      <span class="char">S</span>
+      <span class="char">G</span>
+      <span class="char">Z</span>
       <span class="char">O</span>
-      <span class="char">C</span>
-      <span class="char">E</span>
-      <span class="char">A</span>
-      <span class="char">N</span>
+      <span class="char">O</span>
     </h1>
   </div>
+  <DownButton4 />
 </template>
 
 <script>
-export default {};
+import DownButton4 from "../DownButton/DownButton4.vue";
+export default {
+  components: {
+    DownButton4,
+  },
+};
 </script>
 
 <style scoped>
@@ -43,6 +49,7 @@ h1 {
   color: #fff;
   font: 900 60px Montserrat;
   text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .concept {
@@ -70,7 +77,7 @@ h1 {
 .concept-six {
   display: flex;
   align-items: center;
-  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/beach.jpg)
+  background: url(https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602616/FE7A1203_lnzdzu.jpg)
     top right / cover;
 }
 
@@ -112,5 +119,20 @@ h1 {
   flex: 1;
   transition: 0.3s ease-in-out;
   position: relative;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 14vw;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 12vw;
+  }
+  .concept-six {
+    background: url(https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741605396/FE7A1182_jym83w.jpg)
+      top right / cover;
+  }
 }
 </style>

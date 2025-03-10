@@ -77,7 +77,7 @@ export default {
 .custom-footer {
   background-color: #1c1c1c;
   color: #fff;
-  padding: 40px 20px;
+  padding: 20px 20px;
   font-family: Arial, sans-serif;
 }
 
@@ -104,7 +104,7 @@ export default {
 
 .footer-logo h2 {
   font-family: "Arial Black", sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -114,7 +114,6 @@ export default {
   color: #ccc;
   word-spacing: 1px;
   text-align: justify;
-  /* text-align: justify; */
 }
 
 .footer-description a {

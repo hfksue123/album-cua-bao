@@ -1,5 +1,6 @@
 <template id="web">
   <HeaderComp />
+  <Description1Comp v-bind:content="popupContent" />
   <div class="container" ref="container">
     <div class="grid-item" v-for="(image, index) in images" :key="index">
       <a
@@ -29,9 +30,10 @@
 import { Fancybox } from "@fancyapps/ui";
 import lozad from "lozad";
 
-import HeaderComp from "../Headers/Header2Comp.vue";
+import HeaderComp from "../Headers/Header3Comp.vue";
 import FooterComp from "../FooterComp.vue";
 import PaginationComp from "../PaginationComp.vue";
+import Description1Comp from "../Description/Description1Comp.vue";
 
 export default {
   name: "GalleryComponent",
@@ -39,78 +41,85 @@ export default {
     HeaderComp,
     FooterComp,
     PaginationComp,
+    Description1Comp,
   },
   data() {
     return {
-      // w_800,q_auto,f_auto
+      popupContent:
+        "<br><b>&#10149; Name:</b> HOME (Page 2)<br><b>&#10149; Combo:</b> canon 5d2 + 50stm<br><b>&#10149; Time:</b> 5 / 2023<br><br> Bộ ảnh ngẫu nhiên chụp trong vườn nhà mình. Enjoy!!! ❤️",
       images: [
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277972/FE7A0809_lyev5b.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277972/FE7A0809_lyev5b.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591587/IMG_2544_mgz4k4.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591587/IMG_2544_mgz4k4.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277974/FE7A0817_e88rhn.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277974/FE7A0817_e88rhn.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591586/IMG_2493_gkimoe.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591586/IMG_2493_gkimoe.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277975/FE7A9881_cibccl.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277975/FE7A9881_cibccl.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591586/IMG_2535_e37e5a.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591586/IMG_2535_e37e5a.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277974/FE7A9903_qrceyv.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277974/FE7A9903_qrceyv.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591586/IMG_2537_ygh6zu.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591586/IMG_2537_ygh6zu.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277975/IMG_2217_hjy3xs.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277975/IMG_2217_hjy3xs.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591586/IMG_2540_xhrsih.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591586/IMG_2540_xhrsih.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722277976/IMG_2255_bohgzp.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722277976/IMG_2255_bohgzp.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591585/IMG_2473_sjvvbm.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591585/IMG_2473_sjvvbm.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742969/FE7A9985_hwypv1.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A9985_hwypv1.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591585/IMG_2526_humo8o.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591585/IMG_2526_humo8o.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1200,q_auto,f_auto/v1730742969/FE7A0019_cbglsd.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A0019_cbglsd.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591585/IMG_2513_tmsbdz.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591585/IMG_2513_tmsbdz.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742969/FE7A0584_qgkwhi.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742969/FE7A0584_qgkwhi.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591585/IMG_2505_sjadr6.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591585/IMG_2505_sjadr6.jpg",
+          caption: "",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742970/FE7A9986_fple7v.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742970/FE7A9986_fple7v.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591584/IMG_2462_ffd8jf.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591584/IMG_2462_ffd8jf.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742972/FE7A9993_dxnuj4.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9993_dxnuj4.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591584/IMG_2471_gligkv.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591584/IMG_2471_gligkv.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742973/FE7A0047_lez3ug.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742973/FE7A0047_lez3ug.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591583/IMG_2454_b23coj.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591583/IMG_2454_b23coj.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742973/FE7A9946_ojffgf.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742973/FE7A9946_ojffgf.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591583/IMG_2318_n7u9so.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591583/IMG_2318_n7u9so.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1730742972/FE7A9989_x85qdc.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9989_x85qdc.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591583/IMG_2457_q5wjhl.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591583/IMG_2457_q5wjhl.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1730742972/FE7A9996_owwhxb.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1730742972/FE7A9996_owwhxb.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591583/IMG_2458_jguzy6.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591583/IMG_2458_jguzy6.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602212/FE7A1326_zu2zu5.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602212/FE7A1326_zu2zu5.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591583/IMG_2459_tr2s4y.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591583/IMG_2459_tr2s4y.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741591582/IMG_2309_uchhix.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741591582/IMG_2309_uchhix.jpg",
         },
       ],
       totalPages: 2, // Số trang tổng cộng, có thể thay đổi
-      links: ["/ktx", "/ktx2"],
+      links: ["/home", "/home2"],
     };
   },
   methods: {
@@ -233,37 +242,29 @@ export default {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
-  transform: translateX(-7%);
+  transform: translateX(-5%);
 }
 
 .grid-item:hover img {
-  transform: translateX(0.1px);
+  transform: translateX(0);
 }
 
 .grid-item:nth-child(1) {
+  grid-column: span 1;
   grid-row: span 1;
-  grid-column: span 2;
 }
 
 .grid-item:nth-child(2) {
-  grid-column: span 3;
-  grid-row: span 1;
-}
-.grid-item:nth-child(3) {
-  grid-row: span 2;
-  grid-row: span 1;
-}
-.grid-item:nth-child(4) {
+  grid-column: span 1;
   grid-row: span 2;
 }
 
-.grid-item:nth-child(5) {
-  grid-row: span 2;
-  grid-column: span 2;
+.grid-item:nth-child(4) {
+  grid-row: span 1;
 }
 
 .grid-item:nth-child(6) {
-  grid-row: span 2;
+  grid-row: span 3;
   grid-column: span 2;
 }
 
@@ -272,38 +273,22 @@ export default {
   grid-column: span 1;
 }
 
-.grid-item:nth-child(8) {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-.grid-item:nth-child(11) {
-  grid-row: span 1;
-  grid-column: span 2;
-}
-
 .grid-item:nth-child(12) {
-  grid-column: span 1;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-item:nth-child(13) {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .grid-item:nth-child(15) {
-  grid-row: span 1;
   grid-column: span 1;
-}
-.grid-item:nth-child(16) {
-  grid-column: span 2;
 }
 
 .grid-item:nth-child(17) {
-  grid-row: span 2;
-}
-
-.grid-item:nth-child(19) {
-  grid-column: span 2;
-}
-
-.grid-item:nth-child(20) {
-  grid-column: span 3;
+  grid-row: span 1;
 }
 
 @keyframes fade {
@@ -335,7 +320,7 @@ export default {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
@@ -343,32 +328,27 @@ export default {
   }
 
   .grid-item:nth-child(2) {
-    grid-column: span 2;
-    grid-row: span 1;
+    grid-column: span 1;
+    grid-row: span 2;
   }
 
   .grid-item:nth-child(6) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  .grid-item:nth-child(8) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  .grid-item:nth-child(10) {
     grid-column: span 1;
     grid-row: span 2;
+  }
+  .grid-item:nth-child(9) {
+    grid-column: span 2;
   }
   .grid-item:nth-child(14) {
-    grid-column: span 1;
-    grid-row: span 2;
+    grid-column: span 2;
   }
   .grid-item:nth-child(15) {
     grid-column: span 1;
-    grid-row: span 1;
   }
-  .grid-item:nth-child(16) {
+
+  .grid-item:nth-child(17) {
     grid-column: span 2;
+    grid-row: span 2;
   }
 }
 </style>

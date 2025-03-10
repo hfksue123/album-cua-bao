@@ -3,13 +3,13 @@
     <h1>Photo Gallery</h1>
     <ul>
       <li v-for="(image, index) in images" :key="index">
-        <a href="#">
+        <router-link :to="image.to">
           <figure>
             <img :src="image.src" :alt="image.alt" />
             <figcaption>{{ image.caption }}</figcaption>
             <div class="image-title">{{ image.title }}</div>
           </figure>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -22,38 +22,44 @@ export default {
     return {
       images: [
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1722012142/IMG_1961_yy4ezr.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto,x_500,y_250,c_crop/v1722012156/IMG_1959_aqm7l4.png",
           caption: "Gigamall with friends",
           title: "Gigamall",
+          to: "/giga",
         },
         {
-          src: "https://images.unsplash.com/photo-1633621533308-8760aefb5521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjAyMQ&ixlib=rb-1.2.1&q=80&w=400",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto,x_500,y_350,c_crop/v1730742972/FE7A9989_x85qdc.jpg",
           caption: "My 4 years of youth",
-          title: "Thu Duc",
+          title: "Lang Dai Hoc",
+          to: "/ktx",
         },
         {
-          src: "https://images.unsplash.com/photo-1633635146842-12d386e64058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400",
-          alt: "Person standing alone in a misty forest",
-          caption: "Forest escapes",
-          title: "Forest",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_2800,q_auto,f_auto,x_1500,y_950,c_crop/v1741591586/IMG_2540_xhrsih.jpg",
+          caption: "Nowhere is like home",
+          title: "Home",
+          to: "/home2",
         },
         {
-          src: "https://images.unsplash.com/photo-1568444438385-ece31a33ce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400",
-          alt: "Person hiking on a trail through mountains while taking a photo with phone",
-          caption: "Hiking trails",
-          title: "Hiking",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_600,q_400,f_auto,c_crop/v1732530821/5_juieev.png",
+          caption: "Tet Am Lich 2022",
+          title: "TET",
+          to: "/home",
         },
         {
-          src: "https://images.unsplash.com/photo-1633515257379-5fda985bd57a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400",
-          alt: "Street scene with person walking and others on motorbikes, all wearing masks",
-          caption: "Street scenes",
-          title: "Street",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000/v1741600970/FE7A0221-Enhanced-NR-2_q74sna.jpg",
+          caption: "Street scenes and people at SG",
+          title: "SaiGon",
+          to: "/sg",
         },
         {
-          src: "https://images.unsplash.com/photo-1633209931146-260ce0d16e22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400",
-          alt: "Fashionable-looking girl with blond hair and pink sunglasses",
-          caption: "Trending",
-          title: "Trending",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1741602625/FE7A1107_um0fho.jpg",
+          caption: "Thao Cam Vien Sai Gon",
+          title: "Zoo",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1741602625/FE7A1107_um0fho.jpg",
+          caption: "Thao Cam Vien Sai Gon",
+          title: "Zoo",
         },
       ],
     };
@@ -188,6 +194,15 @@ a:is(:hover, :focus) figcaption {
 @media (max-width: 400px) {
   ul {
     grid-template-columns: 1fr 1fr; /* Chia 1 dòng thành 2 ảnh */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  figure .image-title {
+    bottom: 5px;
+    right: 5px;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.305);
   }
 }
 </style>

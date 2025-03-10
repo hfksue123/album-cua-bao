@@ -23,18 +23,18 @@
       <div
         class="item"
         :style="{
-          backgroundImage: `url(${require('@/assets/img/home/2.jpg')})`,
+          backgroundImage: `url(https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602651/FE7A0989_mpzdw6.jpg)`,
         }"
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">SAIGON ZOO</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
-            tại Sài Gòn.
+            Những khoảnh khắc gần gũi, những ánh mắt hồn nhiên và những kỷ niệm
+            khó quên cùng các bé! 🐾💛
           </div>
-          <router-link id="btnSeeAlbum" to="/album"
+          <router-link id="btnSeeAlbum" to="/zoo"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>
@@ -90,7 +90,7 @@
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
             tại Sài Gòn.
           </div>
-          <router-link id="btnSeeAlbum" to="/album"
+          <router-link id="btnSeeAlbum" to="/sg"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>
@@ -103,7 +103,7 @@
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">Coming Soon</div>
           <div class="topic">by ME</div>
           <div class="des">
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
@@ -122,7 +122,7 @@
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">LÀNG ĐẠI HỌC</div>
+          <div class="name">Coming Soon</div>
           <div class="topic">by ME</div>
           <div class="des">
             Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình

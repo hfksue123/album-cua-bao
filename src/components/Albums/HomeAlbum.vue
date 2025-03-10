@@ -142,8 +142,8 @@ export default {
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1732530807/12_ksiqvq.png",
         },
       ],
-      totalPages: 1, // Số trang tổng cộng, có thể thay đổi
-      links: ["/home"],
+      totalPages: 2, // Số trang tổng cộng, có thể thay đổi
+      links: ["/home", "/home2"],
     };
   },
   methods: {
