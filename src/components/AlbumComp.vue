@@ -79,7 +79,7 @@
       <div
         class="item"
         :style="{
-          backgroundImage: `url(${require('@/assets/img/home/5.jpg')})`,
+          backgroundImage: `url(https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741598201/IMG_1824_nllsf7.jpg)`,
         }"
       >
         <div class="content">

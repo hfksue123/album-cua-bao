@@ -58,6 +58,7 @@
               FB: <a href="https://www.facebook.com/hfksue123">Nguyen Bao</a>
             </li>
           </ul>
+          <VisitorCounter />
           <p class="copyright">
             Copyright © 2024 hfksue123. All Rights Reserved.
           </p>
@@ -68,8 +69,11 @@
 </template>
 
 <script>
+import VisitorCounter from "./VisitorCounter.vue";
+
 export default {
   name: "CustomFooter",
+  components: { VisitorCounter },
 };
 </script>
 

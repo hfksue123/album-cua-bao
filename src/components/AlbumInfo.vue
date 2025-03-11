@@ -53,13 +53,15 @@ export default {
         },
         {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1741602625/FE7A1107_um0fho.jpg",
-          caption: "Thao Cam Vien Sai Gon",
-          title: "Zoo",
+          caption: "Thao Cam Vien Sai Gon Part 1",
+          title: "Zoo 1",
+          to: "/zoo",
         },
         {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1741602625/FE7A1107_um0fho.jpg",
-          caption: "Thao Cam Vien Sai Gon",
-          title: "Zoo",
+          caption: "Thao Cam Vien Sai Gon Part 2",
+          title: "Zoo 2",
+          to: "/zoo",
         },
       ],
     };

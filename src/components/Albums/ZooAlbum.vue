@@ -44,40 +44,156 @@ export default {
     return {
       images: [
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741600968/FE7A0218_rtblrj.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741600968/FE7A0218_rtblrj.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602677/FE7A0979_1_qj78lf.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602677/FE7A0979_1_qj78lf.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741600968/FE7A0205_vkfccd.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741600968/FE7A0205_vkfccd.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602675/FE7A1145_wcw9mp.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602675/FE7A1145_wcw9mp.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741600970/FE7A0221-Enhanced-NR-2_q74sna.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741600970/FE7A0221-Enhanced-NR-2_q74sna.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602673/FE7A1126_eukz3g.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602673/FE7A1126_eukz3g.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601133/FE7A0188_qmbbhq.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601133/FE7A0188_qmbbhq.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602671/FE7A1112_relsl2.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602671/FE7A1112_relsl2.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601160/FE7A0849_xkmf5c.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601160/FE7A0849_xkmf5c.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602670/FE7A1101_n0tyxq.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602670/FE7A1101_n0tyxq.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601159/FE7A0826_nu60lk.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601159/FE7A0826_nu60lk.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602668/FE7A1091_wmsvmi.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602668/FE7A1091_wmsvmi.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601164/FE7A0838_qmokwy.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601164/FE7A0838_qmokwy.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602667/FE7A1076_pu90ai.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602667/FE7A1076_pu90ai.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601165/FE7A0855_hbszdl.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601165/FE7A0855_hbszdl.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602664/FE7A1059_b7eyib.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602664/FE7A1059_b7eyib.jpg",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741601167/FE7A0842_cxxdjl.jpg",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741601167/FE7A0842_cxxdjl.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602663/FE7A1034_kw3wg6.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602663/FE7A1034_kw3wg6.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602661/FE7A1041_tbljnm.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602661/FE7A1041_tbljnm.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602660/FE7A1011_z5bxpy.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602660/FE7A1011_z5bxpy.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602658/FE7A1009_b2r6ug.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602658/FE7A1009_b2r6ug.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602656/FE7A1006_ue7wgi.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602656/FE7A1006_ue7wgi.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602655/FE7A1001-Edit_zwmrh4.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602655/FE7A1001-Edit_zwmrh4.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602653/FE7A0996-Edit_fsw3w7.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602653/FE7A0996-Edit_fsw3w7.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602651/FE7A0989_mpzdw6.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602651/FE7A0989_mpzdw6.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602648/FE7A1223_vkallj.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602648/FE7A1223_vkallj.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602646/FE7A1156_lydzlm.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602646/FE7A1156_lydzlm.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602644/FE7A1182_legmd4.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602644/FE7A1182_legmd4.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602643/FE7A1218_bi40l4.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602643/FE7A1218_bi40l4.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602641/FE7A1228_cu7ynw.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602641/FE7A1228_cu7ynw.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602640/FE7A1148_lkame9.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602640/FE7A1148_lkame9.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602639/FE7A0977_zgo0vv.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602639/FE7A0977_zgo0vv.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602637/FE7A1190-Edit_lvipoh.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602637/FE7A1190-Edit_lvipoh.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602635/FE7A1214_ziz6ee.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602635/FE7A1214_ziz6ee.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602633/FE7A0980_jyayca.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602633/FE7A0980_jyayca.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602632/FE7A1189_xng9dp.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602632/FE7A1189_xng9dp.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602630/FE7A1158_byrete.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602630/FE7A1158_byrete.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602628/FE7A1150_c8gvst.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602628/FE7A1150_c8gvst.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602626/FE7A1135_nexuyl.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602626/FE7A1135_nexuyl.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602625/FE7A1107_um0fho.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602625/FE7A1107_um0fho.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602623/FE7A1184_l6xrdy.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602623/FE7A1184_l6xrdy.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602621/FE7A1229_chexbt.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602621/FE7A1229_chexbt.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602620/FE7A1230-Edit_lxnvfy.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602620/FE7A1230-Edit_lxnvfy.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602618/FE7A0974_l249b7.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602618/FE7A0974_l249b7.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602617/FE7A1206_i2ivuu.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602617/FE7A1206_i2ivuu.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602616/FE7A1192_rvxytn.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602616/FE7A1192_rvxytn.jpg",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800,q_auto,f_auto/v1741602616/FE7A1203_lnzdzu.jpg",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602616/FE7A1203_lnzdzu.jpg",
         },
       ],
       totalPages: 1,
@@ -214,10 +330,6 @@ export default {
 .grid-item:nth-child(2) {
   grid-column: span 1;
 }
-
-.grid-item:nth-child(3) {
-  grid-row: span 2;
-}
 .grid-item:nth-child(4) {
   grid-row: span 2;
 }
@@ -230,6 +342,23 @@ export default {
 }
 .grid-item:nth-child(9) {
   grid-column: span 2;
+}
+.grid-item:nth-child(17) {
+  grid-row: span 2;
+}
+.grid-item:nth-child(20) {
+  grid-row: span 2;
+}
+.grid-item:nth-child(27) {
+  grid-column: span 2;
+}
+.grid-item:nth-child(31) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.grid-item:nth-child(38) {
+  grid-column: span 3;
+  grid-row: span 1;
 }
 @keyframes fade {
   from {
@@ -276,6 +405,14 @@ export default {
 
   .grid-item:nth-child(6) {
     grid-column: span 2;
+    grid-row: span 2;
+  }
+  .grid-item:nth-child(13) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .grid-item:nth-child(35) {
+    grid-column: span 1;
     grid-row: span 2;
   }
 }

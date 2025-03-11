@@ -16,6 +16,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "axios": "^1.8.2",
     "blurhash": "^2.0.5",
     "body-scroll-lock": "^4.0.0-beta.0",
     "core-js": "^3.8.3",
