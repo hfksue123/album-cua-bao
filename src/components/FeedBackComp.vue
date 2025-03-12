@@ -7,7 +7,7 @@
         <input v-model="name" placeholder="Cậu tên gì thế :>" required />
       </p>
 
-      <p type="Rating:">
+      <p type="Rate my pics:">
         <span
           v-for="star in 5"
           :key="star"
@@ -30,9 +30,9 @@
 
       <div>
         <span><font-awesome-icon :icon="['fab', 'instagram']" /></span>
-        hfksue123<br />
+        hfksue123
         <span><font-awesome-icon :icon="['fas', 'envelope']" /></span>
-        contact@company.com
+        baosum01@gmail.com
       </div>
     </form>
   </div>
@@ -111,7 +111,7 @@ export default {
   font-size: 10px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 63px;
   padding: 10px;
   border: 2px solid #006899;
   border-radius: 5px;
@@ -197,7 +197,7 @@ export default {
 .wrapper .form button {
   float: right;
   padding: 8px 12px;
-  margin: 8px 0 0;
+  margin: 15px 0 0;
   font-family: "Montserrat", sans-serif;
   border: 2px solid #78788c;
   background: 0;
@@ -266,6 +266,7 @@ export default {
   .wrapper .form button {
     font-size: 12px;
     padding: 6px;
+    margin: 9px 0 0;
   }
   .wrapper .form div {
     right: 0px;
