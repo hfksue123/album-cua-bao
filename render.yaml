@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: baos-album
+    name: baos-album-backend
     env: node
     plan: free
     buildCommand: npm install
@@ -8,3 +8,10 @@ services:
     envVars:
       - key: MONGO_URI
         value: mongodb+srv://baosum01:Giabao0905@cluster0.gw9dg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+  - type: web
+    name: baos-album-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
