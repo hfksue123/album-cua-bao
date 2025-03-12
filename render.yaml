@@ -12,6 +12,5 @@ services:
   - type: web
     name: baos-album-frontend
     env: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
