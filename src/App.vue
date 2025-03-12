@@ -36,7 +36,7 @@ export default {
     window.onload = () => {
       setTimeout(() => {
         this.loading = false;
-      }, 3000);
+      }, 500);
     };
   },
 };

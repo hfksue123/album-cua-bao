@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: baos-album-backend
+    name: baos-album
     env: node
     plan: free
     buildCommand: npm install

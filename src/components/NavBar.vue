@@ -8,7 +8,7 @@
         <router-link to="/" @click="closeDropdown">Home</router-link>
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/404" @click="closeDropdown">404</router-link>
-        <router-link to="/footer" @click="closeDropdown">Footer</router-link>
+        <router-link to="/feedback" @click="closeDropdown">Footer</router-link>
         <router-link to="/albuminfo" @click="closeDropdown">Test2</router-link>
       </nav>
       <div

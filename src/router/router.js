@@ -10,6 +10,7 @@ import Error404Comp from "@/components/Error404Comp.vue";
 import ProfileComp from "../components/ProfileComp.vue";
 import AlbumTest from "@/components/AlbumTest.vue";
 import AlbumInfo from "@/components/AlbumInfo.vue";
+import Feedback from "@/components/FeedBackComp.vue";
 //albums
 import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
 import KtxAlbum from "@/components/Albums/KtxAlbum.vue";
@@ -33,6 +34,7 @@ const routes = [
   { path: "/sg2", component: SaiGonAlbum2 },
   { path: "/zoo", component: ZooAlbum },
   //pages
+  { path: "/feedback", component: Feedback },
   { path: "/albumtest", component: AlbumTest },
   { path: "/modal", component: ModalInactive },
   { path: "/albuminfo", component: AlbumInfo },

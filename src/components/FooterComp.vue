@@ -73,7 +73,9 @@ import VisitorCounter from "./VisitorCounter.vue";
 
 export default {
   name: "CustomFooter",
-  components: { VisitorCounter },
+  components: {
+    VisitorCounter,
+  },
 };
 </script>
 
