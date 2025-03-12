@@ -26,6 +26,7 @@
     "lightbox2": "^2.11.4",
     "lozad": "^1.16.0",
     "lqip-modern": "^2.1.0",
+    "mongoose": "^8.12.1",
     "photoswipe": "^5.4.4",
     "photoswipe-dynamic-caption-plugin": "^1.2.7",
     "plyr": "^3.7.8",
