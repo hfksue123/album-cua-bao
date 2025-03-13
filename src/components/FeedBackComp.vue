@@ -58,7 +58,7 @@ export default {
   methods: {
     async sendFeedback() {
       try {
-        await axios.post(`${API_URL}/send-feedback`, {
+        await axios.post(`${API_URL}/api/send-feedback`, {
           name: this.name,
           rating: this.rating,
           message: this.message,
