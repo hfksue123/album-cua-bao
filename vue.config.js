@@ -13,4 +13,9 @@ module.exports = defineConfig({
       }),
     ],
   },
+  pluginOptions: {
+    dotenv: {
+      systemvars: true,
+    },
+  },
 });

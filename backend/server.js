@@ -14,7 +14,10 @@ mongoose.connect(process.env.MONGO_URI)
     .catch(err => console.error('❌ Lỗi kết nối MongoDB:', err));
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: "*", // Hoặc cụ thể: ["https://your-frontend.com"]
+    methods: ["GET", "POST"]
+}));
 app.use(express.json());
 app.use('/api', feedbackRoutes);
 
