@@ -11,11 +11,9 @@ module.exports = defineConfig({
         jQuery: "jquery",
         "window.jQuery": "jquery",
       }),
-    ],
-  },
-  pluginOptions: {
-    dotenv: {
-      systemvars: true,
-    },
-  },
+      new webpack.DefinePlugin({
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(true)
+      })
+    ]
+  }
 });

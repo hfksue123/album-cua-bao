@@ -42,6 +42,7 @@
 <script>
 import axios from "axios";
 import BackgroundCanvas from "./BackgroundCanvas.vue";
+const API_URL = "https://baos-album-backenddd.onrender.com";
 
 export default {
   components: { BackgroundCanvas },
@@ -57,9 +58,9 @@ export default {
   methods: {
     async sendFeedback() {
       try {
-        await axios.post("http://localhost:5000/api/send-feedback", {
+        await axios.post(`${API_URL}/send-feedback`, {
           name: this.name,
-          rating: this.rating, // Gửi rating thay vì email
+          rating: this.rating,
           message: this.message,
         });
 

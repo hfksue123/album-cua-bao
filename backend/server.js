@@ -1,78 +1,41 @@
 require('dotenv').config();
-console.log('🔍 MONGO_URI:', process.env.MONGO_URI);
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const feedbackRoutes = require('./routes/feedbackRoutes');
+const visitorRoutes = require('./routes/visitorRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI;
 
 // Kết nối MongoDB
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('🔗 Đã kết nối MongoDB!'))
-    .catch(err => console.error('❌ Lỗi kết nối MongoDB:', err));
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('✅ Đã kết nối MongoDB!'))
+    .catch(err => {
+        console.error('❌ Lỗi kết nối MongoDB:', err);
+        process.exit(1); // Dừng server nếu không kết nối được
+    });
+
+mongoose.connection.on('error', err => console.error('⚠️ Mongoose error:', err));
 
 // Middleware
 app.use(cors({
-    origin: "*", // Hoặc cụ thể: ["https://your-frontend.com"]
+    origin: "*",
     methods: ["GET", "POST"]
 }));
 app.use(express.json());
+
+// Routes
 app.use('/api', feedbackRoutes);
+app.use('/api', visitorRoutes);
 
-// Định nghĩa Schema và Model
-const visitorSchema = new mongoose.Schema({
-    date: { type: String, required: true },
-    count: { type: Number, default: 0 },
-    uniqueIps: { type: [String], default: [] } // Lưu danh sách IP duy nhất
-});
-const Visitor = mongoose.model('Visitor', visitorSchema);
-
-// API: Ghi nhận lượt truy cập theo IP
-app.post('/visit', async (req, res) => {
-    try {
-        const today = new Date().toISOString().split('T')[0];
-        const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-
-        let visitor = await Visitor.findOne({ date: today });
-
-        if (!visitor) {
-            visitor = new Visitor({ date: today, count: 1, uniqueIps: [ip] });
-        } else if (!visitor.uniqueIps.includes(ip)) {
-            visitor.count += 1;
-            visitor.uniqueIps.push(ip);
-        } else {
-            return res.status(200).json({ message: 'IP đã được tính trước đó' });
-        }
-
-        await visitor.save();
-        res.status(200).json({ message: 'Lượt truy cập đã được ghi nhận!' });
-    } catch (error) {
-        console.error("❌ Lỗi cập nhật lượt truy cập:", error);
-        res.status(500).send("Lỗi server");
-    }
-});
-
-// API: Lấy số lượt truy cập
-app.get('/visitor-count', async (req, res) => {
-    try {
-        const today = new Date().toISOString().split('T')[0];
-
-        const todayData = await Visitor.findOne({ date: today });
-        const total = await Visitor.aggregate([{ $group: { _id: null, total: { $sum: "$count" } } }]);
-
-        res.status(200).json({
-            total: total.length > 0 ? total[0].total : 0,
-            today: todayData ? todayData.count : 0
-        });
-    } catch (error) {
-        console.error("❌ Lỗi lấy số lượt truy cập:", error);
-        res.status(500).send("Lỗi server");
-    }
+// Kiểm tra API có chạy không
+app.get('/', (req, res) => {
+    res.send('🚀 API đang chạy...');
 });
 
 // Khởi động server
 app.listen(PORT, () => {
-    console.log(`🚀 Server chạy tại http://localhost:${PORT}`);
+    console.log(`🚀 Server chạy tại PORT:${PORT}`);
 });

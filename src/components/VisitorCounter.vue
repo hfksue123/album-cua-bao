@@ -7,7 +7,7 @@
 
 <script>
 import axios from "axios";
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://baos-album-backenddd.onrender.com";
 
 export default {
   data() {
@@ -18,12 +18,21 @@ export default {
   },
   async mounted() {
     try {
-      await axios.post(`${API_URL}/visit`);
+      // Kiểm tra nếu đã ghi nhận lượt truy cập hôm nay chưa
+      const lastVisit = localStorage.getItem("lastVisit");
+      const today = new Date().toDateString();
+
+      if (lastVisit !== today) {
+        await axios.post(`${API_URL}/visit`);
+        localStorage.setItem("lastVisit", today); // Lưu ngày đã truy cập
+      }
+
+      // Lấy số lượt truy cập
       const response = await axios.get(`${API_URL}/visitor-count`);
       this.totalVisitors = response.data.total;
       this.todayVisitors = response.data.today;
     } catch (error) {
-      console.error("❌ Lỗi khi lấy số lượng truy cập:", error);
+      console.error("Lỗi khi lấy số lượng truy cập:", error);
     }
   },
 };
