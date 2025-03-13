@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --no-lint",
     "build": "vue-cli-service build",
-    "deploy": "git push origin main",
+    "deploy": "gh-pages -d dist",
+    "commit": "git add . && git commit -m 'hi' && git push",
     "start": "cd backend && node server.js"
   },
   "dependencies": {
