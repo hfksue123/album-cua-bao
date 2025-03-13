@@ -33,7 +33,9 @@
         <router-link to="/giga" @click="closeDropdown">About Me</router-link>
         <router-link to="/ktx" @click="closeDropdown">Info</router-link>
         <router-link to="/test" @click="closeDropdown">Info</router-link>
-        <router-link to="/albuminfo" @click="closeDropdown">Album</router-link>
+        <router-link to="/feedback" @click="closeDropdown"
+          >FeedBack</router-link
+        >
         <router-link to="/404" @click="closeDropdown">404</router-link>
         <div class="dropdown-footer">©2024 hfksue123</div>
       </div>

@@ -215,7 +215,7 @@ export default {
   right: -30px;
   background: #50505a;
   color: #fff;
-  width: 330px;
+  width: 310px;
   padding: 10px 0px 10px 0;
   border-radius: 6px;
   font-size: 12px;
