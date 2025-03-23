@@ -2,7 +2,6 @@ import { createWebHashHistory, createRouter } from "vue-router";
 
 import HeaderComp from "../components/Headers/Header1Comp.vue";
 import Header2Comp from "@/components/Headers/Header2Comp.vue";
-import AboutComp from "../components/AboutComp.vue";
 import ModalInactive from "@/components/ModalInactive.vue";
 import AlbumComp from "../components/AlbumComp.vue";
 import FooterComp from "../components/FooterComp.vue";
@@ -20,6 +19,7 @@ import HomeAlbum2 from "@/components/Albums/HomeAlbum2.vue";
 import SaiGonAlbum from "@/components/Albums/SaiGonAlbum.vue";
 import SaiGonAlbum2 from "@/components/Albums/SaiGonAlbum2.vue";
 import ZooAlbum from "@/components/Albums/ZooAlbum.vue";
+import ZooAlbum2 from "@/components/Albums/ZooAlbum2.vue";
 
 // test
 const routes = [
@@ -33,13 +33,14 @@ const routes = [
   { path: "/sg", component: SaiGonAlbum },
   { path: "/sg2", component: SaiGonAlbum2 },
   { path: "/zoo", component: ZooAlbum },
+  { path: "/zoo2", component: ZooAlbum2 },
   //pages
   { path: "/feedback", component: Feedback },
   { path: "/albumtest", component: AlbumTest },
   { path: "/modal", component: ModalInactive },
   { path: "/albuminfo", component: AlbumInfo },
   { path: "/404", component: Error404Comp },
-  { path: "/:pathMatch(.*)*", component: AboutComp },
+  { path: "/:pathMatch(.*)*", component: AlbumComp },
   { path: "/about", component: HeaderComp },
   { path: "/footer", component: FooterComp },
   { path: "/profile", component: ProfileComp },

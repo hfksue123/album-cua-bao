@@ -58,7 +58,7 @@ export default {
           to: "/zoo",
         },
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1741602625/FE7A1107_um0fho.jpg",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_800/v1742714399/FE7A1459_vwsa99.jpg",
           caption: "Thao Cam Vien Sai Gon Part 2",
           title: "Zoo 2",
           to: "/zoo",

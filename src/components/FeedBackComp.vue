@@ -273,9 +273,13 @@ export default {
     right: 0px;
     width: 250px;
     border-radius: 0 0 10px 10px;
+    font-size: 10px;
   }
   .success-message {
-    margin-bottom: 50px;
+    font-size: 9px;
+    margin-top: 53px;
+    padding: 5px;
+    border: 1px solid #006899;
   }
 }
 </style>

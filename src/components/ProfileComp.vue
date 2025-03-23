@@ -27,8 +27,8 @@
         <a href="#"><font-awesome-icon :icon="['far', 'heart']" /></a>
       </div>
 
-      <a href="#" class="btn-profile">Hướng dẫn</a>
-      <a href="#" class="btn-profile">To gallery</a>
+      <router-link to="/feedback" class="btn-profile">Feedback</router-link>
+      <router-link to="/*" class="btn-profile">To Gallery</router-link>
     </div>
   </section>
 </template>

@@ -106,10 +106,10 @@
           <div class="name">Coming Soon</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
-            tại Sài Gòn.
+            Album của mình đang trong quá trình hoàn thiện, mong bạn đợi thêm
+            chút thời gian.
           </div>
-          <router-link id="btnSeeAlbum" to="/album"
+          <router-link id="btnSeeAlbum" to="/404"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>
@@ -125,10 +125,10 @@
           <div class="name">Coming Soon</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Album này lưu giữ những kỉ niệm suốt 4 năm trời học xa nhà của mình
-            tại Sài Gòn.
+            Album của mình đang trong quá trình hoàn thiện, mong bạn đợi thêm
+            chút thời gian.
           </div>
-          <router-link id="btnSeeAlbum" to="/album"
+          <router-link id="btnSeeAlbum" to="/404"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>

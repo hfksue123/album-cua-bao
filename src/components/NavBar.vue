@@ -6,10 +6,13 @@
       </div>
       <nav class="navbar" :class="{ shrink: isShrunk }">
         <router-link to="/" @click="closeDropdown">Home</router-link>
-        <router-link to="/giga" @click="closeDropdown">About Me</router-link>
-        <router-link to="/404" @click="closeDropdown">404</router-link>
-        <router-link to="/feedback" @click="closeDropdown">Footer</router-link>
-        <router-link to="/albuminfo" @click="closeDropdown">Test2</router-link>
+        <router-link to="/profile" @click="closeDropdown">About Me</router-link>
+        <router-link to="/albuminfo" @click="closeDropdown"
+          >Gallery</router-link
+        >
+        <router-link to="/feedback" @click="closeDropdown"
+          >Feedback</router-link
+        >
       </nav>
       <div
         class="toggle-btn"
@@ -30,13 +33,13 @@
         ></div>
         <div class="dropdown-logo">MyLogo</div>
         <router-link to="/" @click="closeDropdown">Home</router-link>
-        <router-link to="/giga" @click="closeDropdown">About Me</router-link>
-        <router-link to="/ktx" @click="closeDropdown">Info</router-link>
-        <router-link to="/test" @click="closeDropdown">Info</router-link>
-        <router-link to="/feedback" @click="closeDropdown"
-          >FeedBack</router-link
+        <router-link to="/profile" @click="closeDropdown">About Me</router-link>
+        <router-link to="/albuminfo" @click="closeDropdown"
+          >Gallery</router-link
         >
-        <router-link to="/404" @click="closeDropdown">404</router-link>
+        <router-link to="/feedback" @click="closeDropdown"
+          >Feedback</router-link
+        >
         <div class="dropdown-footer">©2024 hfksue123</div>
       </div>
     </div>

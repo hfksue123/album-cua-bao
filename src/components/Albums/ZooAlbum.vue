@@ -196,8 +196,8 @@ export default {
           href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1741602616/FE7A1203_lnzdzu.jpg",
         },
       ],
-      totalPages: 1,
-      links: ["/zoo"],
+      totalPages: 2,
+      links: ["/zoo", "zoo2"],
     };
   },
   methods: {

@@ -22,25 +22,25 @@
             <div
               class="photo"
               style="
-                background-image: url('https://images.unsplash.com/photo-1633635146842-12d386e64058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+                background-image: url('https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto/v1741602651/FE7A0989_mpzdw6.jpg');
               "
             ></div>
             <div
               class="photo"
               style="
-                background-image: url('https://images.unsplash.com/photo-1568444438385-ece31a33ce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+                background-image: url('https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto/v1722012156/IMG_1959_aqm7l4.png');
               "
             ></div>
             <div
               class="photo"
               style="
-                background-image: url('https://images.unsplash.com/photo-1633515257379-5fda985bd57a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+                background-image: url('https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto/v1741591586/IMG_2537_ygh6zu.jpg');
               "
             ></div>
             <div
               class="photo"
               style="
-                background-image: url('https://images.unsplash.com/photo-1633209931146-260ce0d16e22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400');
+                background-image: url('https://res.cloudinary.com/ddhyr7ejn/image/upload/q_auto,f_auto/v1722277966/FE7A0590_sfjnlj.jpg');
               "
             ></div>
           </div>
