@@ -2,7 +2,10 @@
   <section class="home" id="home">
     <div class="home-img">
       <div class="main_img">
-        <img src="../assets/img/header/IMG_1961.png" alt="" />
+        <img
+          src="https://res.cloudinary.com/ddhyr7ejn/image/upload/f_auto,q_auto/v1742797912/1742626370712_itmlsq.png"
+          alt=""
+        />
         <div class="animation"></div>
       </div>
     </div>
@@ -13,9 +16,8 @@
       </h3>
       <p>
         Trang web được tối ưu trên thiết bị desktop và mobile vì vậy khuyến
-        khích mọi người sử dụng những thiết bị này để được trải nghiệm tốt nhất
-        nhé. Có thể đi tiếp để sang gallery ảnh hoặc đọc thêm hướng dẫn ở 2 nút
-        bên dưới.
+        khích mọi người sử dụng những thiết bị này để được trải nghiệm tốt nhất.
+        Sau khi xem xong vui lòng cho mình xin 1 vé feedback nhẹ nhàng nhé ạ 😊
       </p>
 
       <div class="social-icon-profile">
@@ -270,8 +272,41 @@ section {
 }
 @media (max-width: 300px) {
   .home-img .main_img {
-    width: 35vh;
-    height: 35vh;
+    width: 30vh; /* Thu nhỏ hơn nữa */
+    height: 30vh;
+  }
+
+  .home .home-contain h1 {
+    font-size: 32px; /* Giảm kích thước font */
+    line-height: 1.4; /* Điều chỉnh line-height */
+  }
+
+  .home-contain h3 {
+    font-size: 18px; /* Giảm kích thước font */
+    margin-bottom: 4px; /* Thu nhỏ khoảng cách */
+  }
+
+  .home-contain p {
+    font-size: 14px; /* Giảm kích thước font */
+    font-weight: 400;
+  }
+
+  .social-icon-profile a {
+    width: 35px; /* Thu nhỏ icon */
+    height: 35px;
+    font-size: 18px;
+    margin: 8px 6px 8px 0; /* Điều chỉnh khoảng cách */
+  }
+
+  .btn-profile {
+    padding: 8px 10px; /* Giảm padding */
+    border-radius: 2rem; /* Điều chỉnh border-radius */
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .typing-text {
+    font-size: 20px; /* Giảm kích thước font */
   }
 }
 </style>

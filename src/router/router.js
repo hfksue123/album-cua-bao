@@ -12,6 +12,7 @@ import AlbumInfo from "@/components/AlbumInfo.vue";
 import Feedback from "@/components/FeedBackComp.vue";
 //albums
 import GigaAlbum from "@/components/Albums/GigaAlbum.vue";
+import BadenAlbum from "@/components/Albums/BadenAlbum.vue";
 import KtxAlbum from "@/components/Albums/KtxAlbum.vue";
 import KtxAlbum2 from "@/components/Albums/KtxAlbum2.vue";
 import HomeAlbum from "@/components/Albums/HomeAlbum.vue";
@@ -21,11 +22,21 @@ import SaiGonAlbum2 from "@/components/Albums/SaiGonAlbum2.vue";
 import ZooAlbum from "@/components/Albums/ZooAlbum.vue";
 import ZooAlbum2 from "@/components/Albums/ZooAlbum2.vue";
 
+// Function to clear cookies
+const clearCookies = () => {
+  document.cookie.split(";").forEach((cookie) => {
+    document.cookie = cookie
+      .replace(/^ +/, "")
+      .replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`);
+  });
+};
+
 // test
 const routes = [
   { path: "/", component: AlbumComp },
   //albums
   { path: "/giga", component: GigaAlbum },
+  { path: "/baden", component: BadenAlbum },
   { path: "/home", component: HomeAlbum },
   { path: "/home2", component: HomeAlbum2 },
   { path: "/ktx", component: KtxAlbum },
@@ -50,9 +61,16 @@ const routes = [
   // test
 ];
 
+// Router configuration
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+});
+
+// Add beforeEach to clear cookies
+router.beforeEach((to, from, next) => {
+  clearCookies(); // Clear cookies on every navigation
+  next(); // Proceed to the next route
 });
 
 export default router;

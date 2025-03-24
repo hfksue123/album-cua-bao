@@ -3,6 +3,7 @@ const webpack = require("webpack");
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  filenameHashing: true,
   publicPath: process.env.NODE_ENV === "production" ? "/baos-album/" : "/",
   configureWebpack: {
     plugins: [

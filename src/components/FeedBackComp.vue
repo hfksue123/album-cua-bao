@@ -256,6 +256,8 @@ export default {
     height: 370px;
     width: 250px;
     padding: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .wrapper .form h2 {
     font-size: 16px;

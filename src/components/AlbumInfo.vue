@@ -28,6 +28,12 @@ export default {
           to: "/giga",
         },
         {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto,x_540,y_450,c_crop/v1742799847/IMG_1801_mwwram.png",
+          caption: "Baden Mountain",
+          title: "Baden",
+          to: "/baden",
+        },
+        {
           src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_1000,q_auto,f_auto,x_500,y_350,c_crop/v1730742972/FE7A9989_x85qdc.jpg",
           caption: "My 4 years of youth",
           title: "Lang Dai Hoc",

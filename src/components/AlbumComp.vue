@@ -117,18 +117,17 @@
       <div
         class="item"
         :style="{
-          backgroundImage: `url(${require('@/assets/img/home/7.jpg')})`,
+          backgroundImage: `url(${require('@/assets/img/home/7.png')})`,
         }"
       >
         <div class="content">
           <div class="header">ALBUM</div>
-          <div class="name">Coming Soon</div>
+          <div class="name">BÀ ĐEN</div>
           <div class="topic">by ME</div>
           <div class="des">
-            Album của mình đang trong quá trình hoàn thiện, mong bạn đợi thêm
-            chút thời gian.
+            Một lần thăm Tây Ninh cùng team phượt và chinh phục núi Bà Đen.
           </div>
-          <router-link id="btnSeeAlbum" to="/404"
+          <router-link id="btnSeeAlbum" to="/baden"
             ><span>Go to Album</span><em></em
           ></router-link>
         </div>

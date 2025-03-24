@@ -1,24 +1,20 @@
 <template>
   <div class="concept concept-seven">
-    <h1>fries</h1>
+    <h1>BADEN</h1>
   </div>
+  <DownButton5 />
 </template>
 
 <script>
-export default {};
+import DownButton5 from "../DownButton/DownButton5.vue";
+export default {
+  components: {
+    DownButton5,
+  },
+};
 </script>
 
 <style scoped>
-body {
-  font-family: "Comfortaa", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .main-content {
   text-align: center;
   scroll-snap-type: y mandatory;
@@ -62,8 +58,8 @@ h1 {
   opacity: 0.5;
 }
 .concept-seven {
-  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/fries.jpg)
-    top center / cover;
+  background: url(https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799834/IMG_1757_fzl1se.png)
+    center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,33 +68,65 @@ h1 {
 .concept-seven h1 {
   letter-spacing: 35px;
   position: relative;
+  display: inline-block;
 }
 
 .concept-seven h1:before {
-  content: "fries";
+  content: "BADEN";
   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: transparent;
   letter-spacing: 10px;
   text-shadow: none;
+  opacity: 1;
 }
 
 .concept-seven:hover h1:before {
-  transition: 0.6s ease;
+  transition: transform 0.6s ease, color 0.6s ease, opacity 0.6s ease;
   color: rgba(255, 255, 255, 0.8);
-  animation: jump-out 0.6s ease forwards;
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
 }
 
 @keyframes jump-out {
   0% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
   100% {
-    transform: scale(2);
-    color: transparent;
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Giảm kích thước chữ */
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .concept-seven h1 {
+    letter-spacing: 20px; /* Giảm khoảng cách chữ */
+  }
+
+  .concept-seven h1:before {
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px; /* Chữ nhỏ hơn trên màn hình rất nhỏ */
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .concept-seven h1 {
+    letter-spacing: 15px; /* Tiếp tục thu nhỏ khoảng cách */
+  }
+
+  .concept-seven h1:before {
+    letter-spacing: 5px;
   }
 }
 </style>
