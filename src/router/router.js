@@ -22,15 +22,6 @@ import SaiGonAlbum2 from "@/components/Albums/SaiGonAlbum2.vue";
 import ZooAlbum from "@/components/Albums/ZooAlbum.vue";
 import ZooAlbum2 from "@/components/Albums/ZooAlbum2.vue";
 
-// Function to clear cookies
-const clearCookies = () => {
-  document.cookie.split(";").forEach((cookie) => {
-    document.cookie = cookie
-      .replace(/^ +/, "")
-      .replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`);
-  });
-};
-
 // test
 const routes = [
   { path: "/", component: AlbumComp },
@@ -65,12 +56,6 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-});
-
-// Add beforeEach to clear cookies
-router.beforeEach((to, from, next) => {
-  clearCookies(); // Clear cookies on every navigation
-  next(); // Proceed to the next route
 });
 
 export default router;

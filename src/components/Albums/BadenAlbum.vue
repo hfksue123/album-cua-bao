@@ -44,8 +44,64 @@ export default {
     return {
       images: [
         {
-          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/w_500,q_auto,f_auto/v1722012141/IMG_1928_w1gciv.png",
-          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1722012141/IMG_1928_w1gciv.png",
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799828/IMG_1785_lrmc8f.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799828/IMG_1785_lrmc8f.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799829/IMG_1774_a54qer.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799829/IMG_1774_a54qer.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799833/IMG_1762_j8mh59.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799833/IMG_1762_j8mh59.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799831/IMG_1784_cpb0qu.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799831/IMG_1784_cpb0qu.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799837/IMG_1736_fb34vi.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799837/IMG_1736_fb34vi.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799834/IMG_1757_fzl1se.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799834/IMG_1757_fzl1se.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799839/IMG_1758_pzispl.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799839/IMG_1758_pzispl.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799838/IMG_1773_fcl303.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799838/IMG_1773_fcl303.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799842/IMG_1817_h3mxfm.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799842/IMG_1817_h3mxfm.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799841/IMG_1782_xm3mxg.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799841/IMG_1782_xm3mxg.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799847/IMG_1801_mwwram.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799847/IMG_1801_mwwram.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799843/IMG_1747_y1pmnq.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799843/IMG_1747_y1pmnq.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799853/IMG_1833_nnyyuc.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799853/IMG_1833_nnyyuc.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799848/IMG_1839_i4mn4l.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799848/IMG_1839_i4mn4l.png",
+        },
+        {
+          src: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799829/Untitled_Panorama1_ybbymi.png",
+          href: "https://res.cloudinary.com/ddhyr7ejn/image/upload/v1742799829/Untitled_Panorama1_ybbymi.png",
         },
       ],
       totalPages: 1, // Số trang tổng cộng, có thể thay đổi
@@ -203,19 +259,7 @@ export default {
 }
 
 .grid-item:nth-child(15) {
-  grid-column: span 3;
-}
-
-.grid-item:nth-child(17) {
-  grid-row: span 2;
-}
-
-.grid-item:nth-child(19) {
-  grid-column: span 2;
-}
-
-.grid-item:nth-child(20) {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 @keyframes fade {
