@@ -105,7 +105,7 @@ export default {
         },
       ],
       totalPages: 1, // Số trang tổng cộng, có thể thay đổi
-      links: ["/giga"],
+      links: ["/baden"],
     };
   },
   methods: {
